@@ -2,7 +2,8 @@
   <div class="test">
     <li v-for="event in events" :key="event.standort">
       {{event.fields.standort}}
-      <img :src="event.fields.bild.fields.file.url" />
+      <p/>
+        <img :src="event.fields.bild.fields.file.url" />
     </li>
   </div>
 </template>
