@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <li v-for="commute in commutes" :key="commute.person">
-    <a > Link </a>
       <Commute :person="commute.person" :start="commute.start" :destination="commute.destination" />
     </li>
   </div>
@@ -20,14 +19,9 @@ export default {
     return {
       commutes: [
         {
-          person: "Maria",
-          start: "Baar",
-          destination: "Emmenbrücke"
-        },
-        {
-          person: "Hanna",
-          start: "Zürich",
-          destination: "Emmenbrücke"
+          person: "Diddl",
+          start: "Züri",
+          destination: "Bärn"
         }
       ]
     };
