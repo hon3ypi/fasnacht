@@ -1,13 +1,10 @@
 <template>
-<head>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
-</head>
 
-  <div class="test">
-    <li v-for="event in events" :key="event.standort">
+  <div class="fasnacht">
+    <li v-for="event in events" :key="event.name">
+      {{event.fields.name}}
       {{event.fields.standort}}
       <p/>
-        <img :src="event.fields.bild.fields.file.url" />
     </li>
   </div>
 </template>
@@ -17,7 +14,7 @@
 import contentfulClient from "@/module/contentful.js";
 
 export default {
-  name: "Test",
+  name: "Fasnacht",
   data: function() {
     return {
       events: []
@@ -26,7 +23,7 @@ export default {
    created: async function() {
     let result = await contentfulClient
       .getEntries({
-        content_type: "fasnacht"
+        content_type: "events"
       });
     console.log(result);
     this.events = result.items;
