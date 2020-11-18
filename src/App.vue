@@ -1,8 +1,6 @@
 <template>
   <div id="nav">
-    <router-link to="/startseite">Startseite</router-link> |
     <router-link to="/fasnacht">Fasnacht</router-link> |
-    <router-link to="/orte">Orte</router-link> |
     <router-link to="/mapbox">Mapbox</router-link>
   </div>
   

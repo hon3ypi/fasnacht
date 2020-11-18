@@ -1,27 +1,54 @@
 <template>
   <div class="mapbox">
+      <li v-for="element in ort" :key="element.ortsname">
+        {{ element.fields.ortsname }}
+        {{ element.fields.location }}
+      </li>
+
     <div ref="container" class="map"></div>
+
   </div>
 </template>
 
 <script>
 import mapboxgl from "mapbox-gl";
+import contentfulClient from "@/module/contentful.js";
 
 export default {
-  name: "Map",
+  name: "Mapbox",
+  data: function () {
+    return {
+      ort: [],
+    };
+  },
+  created: async function () {},
+
   mounted: async function () {
+    let result = await contentfulClient.getEntries({
+      content_type: "standort",
+    });
+    //console.log(result);
+    this.ort = result.items;
+    /******************************************************/
+
     mapboxgl.accessToken =
-      "pk.eyJ1IjoiaG9uZXlwaSIsImEiOiJja2gzZjZ4c2owbG5sMnBwY2h3ODcxejM5In0.1yvnDVALnpYli5NUNLj-iw";
+      "pk.eyJ1IjoiaGVsZW5hYnJhbnQiLCJhIjoiY2toM2R5a2c2MDVrZTJ5bnlrc2hjZHZ2cCJ9.RlPsoq3S7aj-I_v9tPyRZA";
     const map = new mapboxgl.Map({
       container: this.$refs.container,
-      style: "mapbox://styles/honeypi/ckhm37dyc0vw31ar03zqade6u",
-      center: [8.306494, 47.051416],
-      zoom: 16,
+      style: "mapbox://styles/helenabrant/ckhni7klz0vqj19qwkyq6kg57",
+      center: [this.ort[0].fields.location.lon, this.ort[0].fields.location.lat],
+      zoom: 17,
     });
 
-    map.on("load", async function () {});
+    map.on("load", async function () {
+      let result = await contentfulClient
+      .getEntries({
+        content_type: "standort"
+      });
+      let coordinates = result.items;
 
-    map.on("load", function () {
+
+
       // Add an image to use as a custom marker
       map.loadImage(
         "https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png",
@@ -40,10 +67,10 @@ export default {
                   type: "Feature",
                   geometry: {
                     type: "Point",
-                    coordinates: [8.304565, 47.05071 ],
+                    coordinates: [coordinates[1].fields.location.lon, coordinates[1].fields.location.lat],
                   },
                   properties: {
-                    title: "Jesuitenplatz",
+                    title: coordinates[1].fields.ortsname,
                   },
                 },
                 {
@@ -51,21 +78,21 @@ export default {
                   type: "Feature",
                   geometry: {
                     type: "Point",
-                    coordinates: [8.307675, 47.0526 ],
+                    coordinates: [coordinates[2].fields.location.lon, coordinates[2].fields.location.lat],
                   },
                   properties: {
-                    title: "Fritschibrunnen",
-                  },
+                    title: coordinates[2].fields.ortsname,
+                },
                 },
                 {
                   //Rathaustreppe
                   type: "Feature",
                   geometry: {
                     type: "Point",
-                    coordinates: [8.306024, 47.05181],
+                    coordinates: [coordinates[3].fields.location.lon, coordinates[3].fields.location.lat],
                   },
                   properties: {
-                    title: "Rathaustreppe",
+                    title: coordinates[3].fields.ortsname,
                   },
                 },
               ],
@@ -102,6 +129,6 @@ export default {
   height: 100%;
   width: 100%;
   position: fixed;
-  left: 0;
+  top: 200px;
 }
 </style>

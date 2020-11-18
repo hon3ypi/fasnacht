@@ -1,9 +1,9 @@
 <template>
 
   <div class="fasnacht">
-    <li v-for="event in events" :key="event.name">
-      {{event.fields.name}}
-      {{event.fields.standort}}
+    <li v-for="event in events" :key="event.ortsname">
+      {{event.fields.ortsname}}
+      {{event.fields.location}}
       <p/>
     </li>
   </div>
@@ -23,7 +23,7 @@ export default {
    created: async function() {
     let result = await contentfulClient
       .getEntries({
-        content_type: "events"
+        content_type: "standort"
       });
     console.log(result);
     this.events = result.items;

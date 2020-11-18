@@ -1,13 +1,24 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 /*import Home from '../views/Home.vue'
-import Test from '../views/Test.vue'*/
+import Test from '../views/Test.vue'
 import Orte from '../views/Orte.vue'
+import Startseite from '../views/Startseite.vue'*/
 import Fasnacht from '../views/Fasnacht.vue'
 import Mapbox from '../views/Mapbox.vue'
-import Startseite from '../views/Startseite.vue'
+
 
 const routes = [
   {
+    path: '/fasnacht',
+    name: 'Fasnacht',
+    component: Fasnacht
+  },
+  {
+    path: '/mapbox',
+    name: 'Mapbox',
+    component: Mapbox
+  }/*,
+    {
     path: '/',
     name: 'Startseite',
     component: Startseite
@@ -17,21 +28,11 @@ const routes = [
     name: 'Startseite',
     component: Startseite
   },
-  {
-    path: '/fasnacht',
-    name: 'Fasnacht',
-    component: Fasnacht
-  },
-  {
+    {
     path: '/orte',
     name: 'Orte',
     component: Orte
   },
-  {
-    path: '/mapbox',
-    name: 'Mapbox',
-    component: Mapbox
-  }/*,
   {
     path: '/home',
     name: 'Home',
