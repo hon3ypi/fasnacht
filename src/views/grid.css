@@ -1,0 +1,13 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .div1 { grid-area: 2 / 2 / 3 / 3; }
+    .div2 { grid-area: 2 / 4 / 4 / 6; }
+    .div3 { grid-area: 1 / 7 / 4 / 10; }
+    .div4 { grid-area: 1 / 1 / 5 / 5; }
+    .div5 { grid-area: 1 / 6 / 6 / 11; }
+    .div6 { grid-area: 1 / 1 / 6 / 13; }
