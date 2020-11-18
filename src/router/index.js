@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
 import Fasnacht from '../views/Fasnacht.vue'
 import Orte from '../views/Orte.vue'
+import Mapbox from '../views/Mapbox.vue'
 
 const routes = [
   {
@@ -32,6 +33,11 @@ const routes = [
     path: '/orte',
     name: 'Orte',
     component: Orte
+  },
+  {
+    path: '/mapbox',
+    name: 'Mapbox',
+    component: Mapbox
   }
 ]
 

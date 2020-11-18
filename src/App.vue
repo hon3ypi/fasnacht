@@ -4,8 +4,10 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/test">Test</router-link> |
     <router-link to="/fasnacht">Fasnacht</router-link> |
-    <router-link to="/orte">Orte</router-link>
+    <router-link to="/orte">Orte</router-link> |
+    <router-link to="/mapbox">Mapbox</router-link>
   </div>
+  
   <router-view/>
 </template>
 
