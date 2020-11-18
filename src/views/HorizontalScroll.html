@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+
+</head>
+<body>
+    
+
+<div class="spacer"></div>
+
+<div class="side-scrolling-wrapper">
+
+  <div class="side-scrolling-title">
+    <div class="row center-xs">
+          <div class="col-xs-12 whitebg">
+            <h1 class="fadeInUp">Die Getränkekarte</h1>
+          </div>
+        </div>
+  </div>
+
+  <div class="container">
+    <section class="panel">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="margin-75px"></div>
+          <div class="row">
+            <div class="col-xs-6">
+              <img src="https://dummyimage.com/600x600/f1f1f1/454545.png&text=A" alt="">
+            </div>
+
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="margin-75px"></div>
+          <div class="row">
+            <div class="col-xs-6">
+              <img src="https://dummyimage.com/600x600/27aa67/ffffff.png&text=B" alt="">
+            </div>
+
+            <div class="col-xs-6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="margin-75px"></div>
+          <div class="row">
+            <div class="col-xs-6">
+              <img src="https://dummyimage.com/600x600/f08e29/ffffff.png&text=C" alt="">
+            </div>
+
+            <div class="col-xs-6">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="margin-75px"></div>
+          <div class="row">
+            <div class="col-xs-6">
+              <img src="https://dummyimage.com/600x600/32c4e4/ffffff.png&text=D" alt="">
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </div>
+
+</div>
+
+<div class="spacer"></div>
+
+<style>
+    .side-scrolling-wrapper {
+  position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 0px 0px;
+    overflow: hidden;
+    display: block;
+}
+
+.side-scrolling-title {
+  background: #ccc;
+}
+
+.container {
+  width: 200%;
+  height: 60vh;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  padding: 0px;
+  overflow: hidden;
+  justify-content: stretch;
+}
+
+.panel {
+  width: 33vw;
+  height: auto;
+  text-align: left;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+  img {
+    max-width: 100vw;
+    width:100%;
+    height: auto;
+    display: block;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
+  .step-number {
+    font-size: 24px;
+    line-height: 27px;
+    color: blue;
+    font-weight: 800;
+  }
+  
+
+
+
+.spacer {
+  position: relative;
+  display: block;
+  background: gray;
+  height: 100vh;
+}
+.fadeInUp{
+  background-color: white;
+  
+}
+</style>
+
+
+<script>
+
+    gsap.registerPlugin(ScrollTrigger);
+
+let sections = gsap.utils.toArray(".container .panel");
+
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".side-scrolling-wrapper",
+    pin: true,
+    start: "top +=10px",
+    markers: true,
+    scrub: 1,
+    snap: {
+      snapTo: 1 / (sections.length - 1),
+      duration: {min: 0.2, max: 0.3},
+      delay: 0
+    },
+    // Base vertical scrolling on how wide the container is so it feels more natural.
+    end: () => "+=" + (document.querySelector(".container").offsetWidth / 3.4)
+  }
+});
+</script>
+
+</body>
+</html>
