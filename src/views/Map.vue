@@ -1,12 +1,6 @@
 <template>
   <div class="mapbox">
-      <li v-for="element in ort" :key="element.ortsname">
-        {{ element.fields.ortsname }}
-        {{ element.fields.location }}
-      </li>
-
     <div ref="container" class="map"></div>
-
   </div>
 </template>
 
@@ -129,6 +123,6 @@ export default {
   height: 100%;
   width: 100%;
   position: fixed;
-  top: 200px;
+  left: 0;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/fasnacht">Fasnacht</router-link> |
-    <router-link to="/mapbox">Mapbox</router-link>
+    <router-link to="/map">Map</router-link>
   </div>
   
   <router-view/>

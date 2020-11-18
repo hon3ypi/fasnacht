@@ -1,11 +1,10 @@
 <template>
 
   <div class="fasnacht">
-    <li v-for="event in events" :key="event.ortsname">
-      {{event.fields.ortsname}}
-      {{event.fields.location}}
-      <p/>
-    </li>
+    <div v-for="element in orte" :key="element.ortsname">
+      {{element.fields.ortsname}}
+      {{element.fields.location}}
+    </div>
   </div>
 </template>
 
@@ -17,7 +16,7 @@ export default {
   name: "Fasnacht",
   data: function() {
     return {
-      events: []
+      orte: []
     };
   },
    created: async function() {
@@ -26,7 +25,7 @@ export default {
         content_type: "standort"
       });
     console.log(result);
-    this.events = result.items;
+    this.orte = result.items;
   }
 };
 </script>
