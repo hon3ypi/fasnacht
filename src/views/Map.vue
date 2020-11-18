@@ -7,7 +7,6 @@
 <script>
 import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
-
 export default {
   name: "Mapbox",
   data: function () {
@@ -16,7 +15,6 @@ export default {
     };
   },
   created: async function () {},
-
   mounted: async function () {
     let result = await contentfulClient.getEntries({
       content_type: "standort",
@@ -24,7 +22,6 @@ export default {
     //console.log(result);
     this.ort = result.items;
     /******************************************************/
-
     mapboxgl.accessToken =
       "pk.eyJ1IjoiaGVsZW5hYnJhbnQiLCJhIjoiY2toM2R5a2c2MDVrZTJ5bnlrc2hjZHZ2cCJ9.RlPsoq3S7aj-I_v9tPyRZA";
     const map = new mapboxgl.Map({
@@ -33,23 +30,19 @@ export default {
       center: [this.ort[0].fields.location.lon, this.ort[0].fields.location.lat],
       zoom: 17,
     });
-
     map.on("load", async function () {
       let result = await contentfulClient
       .getEntries({
         content_type: "standort"
       });
       let coordinates = result.items;
-
-
-
       // Add an image to use as a custom marker
       map.loadImage(
         "https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png",
         function (error, image) {
           if (error) throw error;
           map.addImage("custom-marker", image);
-
+          
           //Point in Map
           map.addSource("points", {
             type: "geojson",
@@ -92,7 +85,6 @@ export default {
               ],
             },
           });
-
           // Add a symbol layer
           map.addLayer({
             id: "points",
@@ -117,7 +109,6 @@ export default {
 //Designer
 <style>
 @import url("https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css");
-
 .map {
   float: left;
   height: 100%;
