@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to drink</title>
+    <link rel="stylesheet" href="ScrolltoDrink.css">
+</head>
+<body>
+<div class="container" id=" container1">
+
+    <video class="videoXL" id="videoXLHuerenaff" src="Huerenaff_XL.mp4" ></video>
+    <div id="playbutton" onclick="playpause()">Play video</div>
+
+
+    <div class="imagewrapper">
+    <img class="glass glass1" src="holdrioglas.png">
+    <img class="glass glass1" src="holdrioglas.png">
+    <img class="glass glass1" src="holdrioglas.png">
+
+    <img class="glass glass1" src="holdrioglas.png">
+    <img class="glass glass1" src="holdrioglas.png">
+    <img class="glass glass1" src="holdrioglas.png">
+
+    <img class="glass glass1" src="holdrioglas.png">
+    <img class="glass glass1" src="holdrioglas.png">
+    <img class="glass glass1 falls" src="holdrioglas.png">
+    
+</div>
+</div>
+
+
+
+
+
+<script> 
+
+function playpause(){
+ var vid = document.getElementById("videoXLHuerenaff")
+ var cont = document.getElementById("container1")
+var playbtn = document.getElementById("playbutton")
+
+if(vid.paused){
+vid.play();
+//vid.requestFullscreen();
+cont.classList.add("posfix");
+playbtn.innerTXT= "Pause";
+}
+else if (vid.play||vid.ended){
+    vid.pause();
+cont.classList.remove("posfix");
+}
+
+
+
+}
+
+
+
+
+    
+    </script>
+
+
+</body>
+</html>

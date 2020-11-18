@@ -1,0 +1,40 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+div.othercntnt{background-color: brown;
+    stroke: solid 2px chartreuse;
+height:2000px;}
+
+
+video{position:absolute;
+    width:100%;
+    height:auto;
+}
+.container{    position: relative;
+
+    width:80vw;
+height:auto;}
+
+.glass{width:3%;
+    padding:2vw;
+height:auto;}
+
+.imagewrapper{position:absolute;
+top: 0%;
+background-color: none;
+}
+#playbutton{
+position:absolute;
+padding-top:25%;
+top:auto;
+left:50%;
+}
+
+
+ .posfix{
+width:100vw;
+height:auto; }
+ 
