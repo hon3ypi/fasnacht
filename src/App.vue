@@ -4,7 +4,8 @@
     <router-link to="/grend1">Grend 1</router-link> |
     <router-link to="/grend2">Grend 2</router-link> |
     <router-link to="/grend3">Grend 3</router-link> |
-    <router-link to="/map">Map</router-link>
+    <router-link to="/map">Map</router-link> |
+    <router-link to="/route">Route</router-link>
   </div>
   
   <router-view/>

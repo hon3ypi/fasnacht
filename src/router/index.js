@@ -19,7 +19,7 @@ const routes = [
     component: Map
   },
   {
-    path: '/',
+    path: '/route',
     name: 'Route',
     component: Route
   },

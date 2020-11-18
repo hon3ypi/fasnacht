@@ -1,5 +1,5 @@
 <template>
-  <div class="mapbox">
+  <div class="route">
     <div ref="container" class="map"></div>
   </div>
 </template>
