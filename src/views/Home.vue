@@ -1,4 +1,4 @@
-<template class="">
+<template class="template">
 <div class="boxen">
   <h1>Home</h1>
 
@@ -30,7 +30,7 @@ html{
   font-family: 'Noto Sans', sans-serif;
 }
 
-.boxen { 
+.boxen { position:relative;
 display: grid; 
 grid-template-columns: repeat(12, 1fr); 
 grid-template-rows: repeat(12, 1fr); 
@@ -38,6 +38,9 @@ grid-column-gap: 0px;
 grid-row-gap: 0px; 
 width:100vw;
 height:100vh;
+  overflow: hidden;
+
+
 }
 .box1 { grid-area: 1 / 1 / 4 / 5; 
 background-color: #4CC9F0;
@@ -93,6 +96,12 @@ background-color: #ed5250;
   text-align: center;
 
   } 
+.template{width:100vw;
+height:100vh;
+  overflow: hidden;
+  scroll-behavior:none;
+}
+  
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT
