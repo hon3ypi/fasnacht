@@ -15,11 +15,10 @@
     <div class="box10"></div>
     <div class="box11"></div>
     <div class="box12"></div>
-
-  </div>
     <p class="titel">Luzerner Fasnacht</p>
   </div>
-</div>
+    
+  </div>
 
 </template>
 
@@ -31,43 +30,61 @@ html{
 
 .boxen { 
 display: grid; 
-border: 1px solid red;
 grid-template-columns: repeat(12, 1fr); 
 grid-template-rows: repeat(12, 1fr); 
 grid-column-gap: 0px;
 grid-row-gap: 0px; 
 }
 .box1 { grid-area: 1 / 1 / 4 / 5; 
-border: 1px solid red;
-background-color: aqua;
+background-color: #4CC9F0;
 } 
-.box2 { grid-area: 1 / 5 / 4 / 9; border: 1px solid red;
+.box2 { grid-area: 1 / 5 / 4 / 9; 
+background-color: #7400b8;
 } 
 .box3 { grid-area: 1 / 9 / 4 / 13;
-border: 1px solid red;
+background-color: #ed5250;
  } 
-.box4 { grid-area: 4 / 1 / 7 / 5; border: 1px solid red;
+.box4 { 
+  grid-area: 4 / 1 / 7 / 5; 
+  background-color: #7400b8;
 } 
-.box5 { grid-area: 4 / 5 / 7 / 9; border: 1px solid red;
+.box5 { 
+  grid-area: 4 / 5 / 7 / 9; 
+  background-color: #ed5250;
+
 } 
-.box6 { grid-area: 4 / 9 / 7 / 13; border: 1px solid red;
+.box6 { 
+  grid-area: 4 / 9 / 7 / 13; 
+  background-color: #f8bd4f;
 } 
-.box7 { grid-area: 7 / 1 / 10 / 5;border: 1px solid red;
+.box7 { 
+  grid-area: 7 / 1 / 10 / 5;
+  background-color: #ed5250;
  } 
-.box8 { grid-area: 7 / 5 / 10 / 9;border: 1px solid red;
+.box8 { 
+  grid-area: 7 / 5 / 10 / 9;
+  background-color: #f8bd4f;
  } 
-.box9 { grid-area: 7 / 9 / 10 / 13;border: 1px solid red;
+.box9 { 
+  grid-area: 7 / 9 / 10 / 13;
+  background-color: #86ddb4;
  } 
-.box10 { grid-area: 10 / 1 / 13 / 5;border: 1px solid red;
+.box10 { 
+  grid-area: 10 / 1 / 13 / 5;
+  background-color: #f8bd4f;
  } 
-.box11 { grid-area: 10 / 5 / 13 / 9; border: 1px solid red;
+.box11 { 
+  grid-area: 10 / 5 / 13 / 9; 
+  background-color: #86ddb4;
 } 
-.box12 { grid-area: 10 / 9 / 13 / 13; border: 1px solid red;
+.box12 { 
+  grid-area: 10 / 9 / 13 / 13; 
+  background-color: #4CC9F0;
 } 
 .titel { 
   grid-area: 4 / 5 / 7 / 9; 
   font-size: 73px;
-  color: black;
+  color: white;
   } 
 </style>
 
