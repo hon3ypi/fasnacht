@@ -20,12 +20,9 @@
 
 <h4 class="yellow child5">tagwach</h4>
 <div class="wrapper-video yellowbg child6">
-<video src="assets/bruele.mp4" class="xl-vid"></video>
+<video src="assets/bruele.mp4" class="tagwach_video"></video>
 </div>
-    <h6 class="child7">Kapellplatz, SchmuDO 5 Uhr</h6>
-
-<p class="child7">brüele</p>
-<p class="child7">Urknall</p>
+    <h6 class="child7">Kapellplatz, SchmuDO 5:00 Uhr</h6>
 
 <video src="assets/Foetzeliraege.mp4" class="child8 m-vid"></video>
 
@@ -54,32 +51,33 @@ height:56.2275vw;}
   padding:0%
 }
 
-
  h4{text-align: left;
     font-size: 4em;
         text-transform:uppercase;
             line-height: 110%;
             font-weight:800;
             margin-bottom:0;
-
-
-
-    
     }
-    h5{text-align: left;
+
+    h5 {
+    text-align: left;
     font-size:2em;
     font-weight: 900;
     text-align: start;
     margin-bottom: 0%;
-    margin-top:5%;}
-    h6{text-align: left;
+    margin-top:5%;
+    }
+    h6 {
+    text-align: left;
     padding-top:5%;
     padding-left:3%;
     font-size:2em;}
-    p{text-align: left;
+    p {
+    text-align: left;
     margin-top:1%;
     font-size: 1.2em;
-    font-weight:600;}
+    font-weight:600;
+    }
 
 /* grid*/
 .parent {
@@ -93,29 +91,27 @@ height:56.2275vw;}
     grid-row-gap: 0px;
     overflow: hidden;
     }
-  .child1 { grid-area: 2 / 2 / 3 / 6; 
-  border:solid 1px blue;
-  font-size:2em;
+  .child1 {
+    grid-area: 2 / 2 / 3 / 6; 
+    border:solid 1px blue;
+    font-size:2em;
   }
-
-  .child2{    grid-area: 2 / 6 / 12 / 11;
-  width:100%;
-  height:auto;
-  border:solid 1px blue;
-  
+  .child2{    
+    grid-area: 2 / 6 / 12 / 11;
+    width:100%;
+    height:auto;
+    border:solid 1px blue; 
 }
-.child3 { grid-area: 2 / 9 / 7 / 13;
-border:solid 1px blue;
+.child3 { 
+    grid-area: 2 / 9 / 7 / 13;
+    border:solid 1px blue;
     margin-top:4.15vw;
     font-size: 7em;
-
-
     }
-.child4 { grid-area: 7 / 2 / 13 / 5; 
-border:solid 1px blue;
+.child4 { 
+    grid-area: 7 / 2 / 13 / 5; 
+    border:solid 1px blue;
 }
-
-
 
 .parent2 {
     display: grid;
@@ -128,38 +124,47 @@ border:solid 1px blue;
     grid-row-gap: 0px;
     }
 
-.child5 { grid-area: 2 / 2 / 4 / 6; 
-margin-top:0;
-align-self: flex-end;}
-.child6 {  grid-area: 4 / 1 / 13 / 13; }
+.child5 { 
+    grid-area: 2 / 2 / 4 / 6; 
+    margin-top:0;
+    align-self: flex-end;
+    }
+.child6 {  
+    grid-area: 4 / 1 / 13 / 13; 
+    }
+    .child7 { 
+    grid-area: 5 / 2 / 8 / 6; 
+    margin: 0;
+    padding:0;
+    }
+.child8 {
+    background-color:red;
+    grid-area: 13 / 3 / 18 / 8;
+    }
+.child12{ 
+    grid-area: 20 / 3 / 45 / 11;
+    font-size:8.5em; 
+    }
 
+    img{overflow:hidden;}  
 
-.child7 { grid-area: 5 / 2 / 8 / 6; 
-margin:0;
-padding:0;}
-
-.child8{background-color:red;
-grid-area: 13 / 3 / 18 / 8;}
-
-.child12{ grid-area: 20 / 3 / 45 / 11;
-font-size:8.5em; }
-
-
-   
-    img{overflow:hidden;}
-    
-    
-
-   /*Videos difffernt sizes multiple of grid*/ 
-.xl-vid{width:100%;
-height:100%}
-.m-vid{width:100%;
-height:100%}
-.s-vid{width:100%;
-height:100%}
-
-.video-wrapper{width:100%;
-height:auto;}
+   /*Videos differnt sizes multiple of grid*/ 
+.tagwach_video {
+    width:100%;
+    height:100%
+    }
+.m-vid {
+    width:100%;
+    height:100%
+    }
+.s-vid {
+    width:100%;
+    height:100%
+    }
+.video-wrapper {
+    width:100%;
+    height:auto;
+    }
 
 </style>
 
