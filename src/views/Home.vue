@@ -19,7 +19,7 @@
   </div>
     <p class="titel">Luzerner Fasnacht</p>
   </div>
-</div>
+
 
 </template>
 
