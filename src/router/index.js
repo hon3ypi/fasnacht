@@ -5,9 +5,15 @@ import Route from '../views/Route.vue'
 import Grend1 from '../views/Grend1.vue'
 import Grend2 from '../views/Grend2.vue'
 import Grend3 from '../views/Grend3.vue'
+import Home from '../views/Home.vue'
 
 
 const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
   {
     path: '/fasnacht',
     name: 'Fasnacht',
