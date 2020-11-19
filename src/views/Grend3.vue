@@ -1,7 +1,7 @@
 <template>
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="reset.css">
+    
+
   <div class="grend3">
   <div class="dialogwrapper parent">
 
@@ -46,7 +46,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="Kafi_Huerenaff.svg" alt="">
+              <img src="@/assets/text_kafi_huerenaff.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -63,7 +63,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="Holdrio_1.svg" alt="">
+              <img src="@/assets/text_Holdrio.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -79,7 +79,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="Mönze_Zwätschge.svg" alt="">
+              <img src="@/assets/text_Mönze-zwätschge.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -96,7 +96,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="häxetee.svg" alt="">
+              <img src="@/assets/text_Häxetee.svg" alt="">
             </div>
 
             
@@ -207,7 +207,10 @@
 
 -->DAS ESCH FÖR S CSS
 <style>
-  /*color*/
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap") ;
+@import url("reset.css");
+/*color*/
   .blue {
     color: #4CC9F0;
   }
@@ -387,8 +390,8 @@ position:relative;
 .spacer {
   position: relative;
   display: block;
-  background: gray;
-  height: 100vh;
+  background: #F8BD4F;
+  height: 50vh;
 }
 .fadeInUp{
   background-color: white;
@@ -399,11 +402,17 @@ position:relative;
  
 -->DAS ESCH FÖR S JAVASCRIPT
 <script>
-/*
- gsap.registerPlugin(ScrollTrigger);
+
+import gsap from "gsap"
+import ScrollTrigger from "gsap/ScrollTrigger"
+
+export default{
+  name: "grend3", 
+  mounted: function(){
+    gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".container .panel");
-
+console.log(sections)
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
   ease: "none",
@@ -421,5 +430,16 @@ gsap.to(sections, {
     // Base vertical scrolling on how wide the container is so it feels more natural.
     end: () => "+=" + (document.querySelector(".container").offsetWidth / 3.4)
   }
-});*/
+});
+
+  }
+}
+
+
+
+
+
+
+
+
 </script>
