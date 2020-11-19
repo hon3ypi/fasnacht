@@ -1,5 +1,6 @@
 <template>
-  <div class="route">
+  <div class="grendtest">
+    <h1>Grend Test</h1>
     <div ref="container" class="map"></div>
   </div>
 </template>
@@ -8,7 +9,6 @@
 //Import
 import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
-import getCoordinatesFromGpxFile from "@/module/gpx-utilities.js";
 
 //Stuff woni noni wörkli chegge
 export default {
@@ -22,7 +22,6 @@ export default {
     let result = await contentfulClient.getEntries({
       content_type: "standort",
     });
-    //console.log(result);
     this.ort = result.items;
     /******************************************************/
     mapboxgl.accessToken =
@@ -38,36 +37,65 @@ export default {
     });
 
     map.on("load", async function () {
-      let result = await contentfulClient.getEntries({
-        content_type: "track",
-      });
-
-      console.log(result);
-
-      let coordinates = await getCoordinatesFromGpxFile(
-        result.items[0].fields.gpxtrack.fields.file.url // a link to you gpx file in Contentful
-      );
-
-      map.addSource("route", {
+      map.addSource("fritschibrunnenrathaus", {
         type: "geojson",
         data: {
           type: "Feature",
           geometry: {
             type: "LineString",
-            coordinates: coordinates,
+            coordinates: [
+              [8.307607, 47.052581],
+              [8.307368, 47.052638],
+              [8.305787, 47.052182],
+              [8.305872, 47.052057],
+              [8.306515, 47.052192],
+              [8.306593, 47.051869],
+              [8.30591, 47.051748],
+            ],
           },
         },
       });
       map.addLayer({
-        id: "route",
+        id: "fritschibrunnenrathaus",
         type: "line",
-        source: "route",
+        source: "fritschibrunnenrathaus",
         layout: {
           "line-join": "round",
           "line-cap": "round",
         },
         paint: {
-          "line-color": "red",
+          "line-color": "#ED5250",
+          "line-width": 8,
+        },
+      });
+
+      /*********************************************************** */
+
+      map.addSource("rathausjesuiten", {
+        type: "geojson",
+        data: {
+          type: "Feature",
+          geometry: {
+            type: "LineString",
+            coordinates: [
+              [8.30591, 47.051748],
+              [8.306173, 47.050865],
+              [8.305379, 47.050838],
+              [8.304574, 47.050684],
+            ],
+          },
+        },
+      });
+      map.addLayer({
+        id: "rathausjesuiten",
+        type: "line",
+        source: "rathausjesuiten",
+        layout: {
+          "line-join": "round",
+          "line-cap": "round",
+        },
+        paint: {
+          "line-color": "#F8BD4F",
           "line-width": 8,
         },
       });
@@ -81,9 +109,16 @@ export default {
 @import url("https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css");
 .map {
   float: left;
-  height: 100%;
+  height: 50%;
   width: 100%;
   position: fixed;
   left: 0;
+}
+
+.test {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 500px;
 }
 </style>
