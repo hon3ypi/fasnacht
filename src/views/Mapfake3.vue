@@ -8,9 +8,9 @@
 //Import
 import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
-import fritschi from '../assets/fritschimarker.png';
-import grend from '../assets/grendmarker.png';
-import huereaff from '../assets/huereaffmarker.png';
+import fritschi from "../assets/fritschimarker.png";
+import grend from "../assets/grendmarker.png";
+import huereaff from "../assets/huereaffmarker.png";
 
 //Stuff woni noni wörkli chegge
 export default {
@@ -41,16 +41,13 @@ export default {
 
     /******************************************************/
     map.on("load", async function () {
-
-
-      let result = await contentfulClient
-      .getEntries({
+      let result = await contentfulClient.getEntries({
         content_type: "standort",
       });
       console.log(result.item);
       let coordinates = result.items;
 
-    /*******************************************************/
+      /*******************************************************/
       map.addSource("fritschibrunnenrathaus", {
         type: "geojson",
         data: {
@@ -114,17 +111,15 @@ export default {
         },
       });
 
-
       /*****************************************************/
-      let resultfritschi = await contentfulClient
-      .getEntries({
+      let resultfritschi = await contentfulClient.getEntries({
         content_type: "grende",
       });
 
       console.log(resultfritschi.item);
       //let fritschi = resultfritschi.items;
       /* FRITSCHIBURNNEN ************************************************************/
-        map.loadImage(
+      map.loadImage(
         //fritschi.fields.grendmedia.fields.file.url,
         //"images.ctfassets.net/857folb0vp61/syTDePTB1SToGmTNhXyqI/3249e80243bdce19b4326cf8cd08ac0e/fritschimarker.png",
         //"@/assets/fritschimarker.png",
@@ -132,27 +127,36 @@ export default {
         function (error, image) {
           if (error) throw error;
           map.addImage("fritschi", image);
-          
+
           //Point in Map
-          map.addSource("point", {
+          map.addSource("point1", {
             type: "geojson",
             data: {
-                  //Jesuitenplatz
+              type: "FeatureCollection",
+              features: [
+                {
+                  //Fritschibrunnen
                   type: "Feature",
                   geometry: {
                     type: "Point",
-                    coordinates: [coordinates[3].fields.location.lon, coordinates[3].fields.location.lat],
+                    coordinates: [
+                      coordinates[3].fields.location.lon,
+                      coordinates[3].fields.location.lat,
+                    ],
                   },
                   properties: {
                     title: coordinates[3].fields.ortsname,
+                    description: '<a href="../#/grend1">Ech verzell der öppis dröbert...</a>',
                   },
                 },
+              ],
+            },
           });
           // Add a symbol layer
           map.addLayer({
-            id: "point",
+            id: "point1",
             type: "symbol",
-            source: "point",
+            source: "point1",
             layout: {
               "icon-image": "fritschi",
               // get the title name from the source's "title" property
@@ -162,84 +166,185 @@ export default {
               "text-anchor": "top",
             },
           });
-        },
+        }
       );
       /* RATHAUSTREPPE ************************************************************/
-        map.loadImage(
-        grend,
-        function (error, image) {
-          if (error) throw error;
-          map.addImage("grend", image);
-          
-          //Point in Map
-          map.addSource("point2", {
-            type: "geojson",
-            data: {
-                  //Jesuitenplatz
-                  type: "Feature",
-                  geometry: {
-                    type: "Point",
-                    coordinates: [coordinates[1].fields.location.lon, coordinates[1].fields.location.lat],
-                  },
-                  properties: {
-                    title: coordinates[1].fields.ortsname,
-                  },
+      map.loadImage(grend, function (error, image) {
+        if (error) throw error;
+        map.addImage("grend", image);
+
+        //Point in Map
+        map.addSource("point2", {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features: [
+              {
+                //Rathaustreppe
+                type: "Feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: [
+                    coordinates[1].fields.location.lon,
+                    coordinates[1].fields.location.lat,
+                  ],
                 },
-          });
-          // Add a symbol layer
-          map.addLayer({
-            id: "point2",
-            type: "symbol",
-            source: "point2",
-            layout: {
-              "icon-image": "grend",
-              // get the title name from the source's "title" property
-              "text-field": ["get", "title"],
-              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-              "text-offset": [0, 1.25],
-              "text-anchor": "top",
-            },
-          });
-        },
-      );
+                properties: {
+                  title: coordinates[1].fields.ortsname,
+                  description: '<a href="../#/grend2">Ech verzell der öppis dröbert...</a>',
+                },
+              },
+            ],
+          },
+        });
+        // Add a symbol layer
+        map.addLayer({
+          id: "point2",
+          type: "symbol",
+          source: "point2",
+          layout: {
+            "icon-image": "grend",
+            // get the title name from the source's "title" property
+            "text-field": ["get", "title"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 1.25],
+            "text-anchor": "top",
+          },
+        });
+      });
       /* JESUITENPLATZ ************************************************************/
-      map.loadImage(
-        huereaff,
-        function (error, image) {
-          if (error) throw error;
-          map.addImage("huereaff", image);
-          
-          //Point in Map
-          map.addSource("point3", {
-            type: "geojson",
-            data: {
-                  //Jesuitenplatz
-                  type: "Feature",
-                  geometry: {
-                    type: "Point",
-                    coordinates: [coordinates[2].fields.location.lon, coordinates[2].fields.location.lat],
-                  },
-                  properties: {
-                    title: coordinates[2].fields.ortsname,
-                  },
+      map.loadImage(huereaff, function (error, image) {
+        if (error) throw error;
+        map.addImage("huereaff", image);
+
+        //Point in Map
+        map.addSource("point3", {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features: [
+              {
+                //Jesuitenplatz
+                type: "Feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: [
+                    coordinates[2].fields.location.lon,
+                    coordinates[2].fields.location.lat,
+                  ],
                 },
-          });
-          // Add a symbol layer
-          map.addLayer({
-            id: "point3",
-            type: "symbol",
-            source: "point3",
-            layout: {
-              "icon-image": "huereaff",
-              // get the title name from the source's "title" property
-              "text-field": ["get", "title"],
-              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-              "text-offset": [0, 1.25],
-              "text-anchor": "top",
-            },
-          });
-        },
-      );
+                properties: {
+                  title: coordinates[2].fields.ortsname,
+                  description: '<a href="../#/grend3">Ech verzell der öppis dröbert...</a>',
+                },
+              },
+            ],
+          },
+        });
+        // Add a symbol layer
+        map.addLayer({
+          id: "point3",
+          type: "symbol",
+          source: "point3",
+          layout: {
+            "icon-image": "huereaff",
+            // get the title name from the source's "title" property
+            "text-field": ["get", "title"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 1.25],
+            "text-anchor": "top",
+          },
+        });
+      });
+
+      /***********************************************************************************/
+      map.on("click", "point3", function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        console.log("en String");
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+
+      // Change the cursor to a pointer when the mouse is over the places layer.
+      map.on("mouseenter", "point3", function () {
+        map.getCanvas().style.cursor = "pointer";
+      });
+
+      // Change it back to a pointer when it leaves.
+      map.on("mouseleave", "point3", function () {
+        map.getCanvas().style.cursor = "";
+      });
+
+      /***********************************************************************************/
+      map.on("click", "point2", function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        console.log("en String");
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+
+      // Change the cursor to a pointer when the mouse is over the places layer.
+      map.on("mouseenter", "point2", function () {
+        map.getCanvas().style.cursor = "pointer";
+      });
+
+      // Change it back to a pointer when it leaves.
+      map.on("mouseleave", "point2", function () {
+        map.getCanvas().style.cursor = "";
+      });
+
+      /***********************************************************************************/
+      map.on("click", "point1", function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        console.log("en String");
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+
+      // Change the cursor to a pointer when the mouse is over the places layer.
+      map.on("mouseenter", "point1", function () {
+        map.getCanvas().style.cursor = "pointer";
+      });
+
+      // Change it back to a pointer when it leaves.
+      map.on("mouseleave", "point1", function () {
+        map.getCanvas().style.cursor = "";
+      });
+
+      
     });
   },
 };
@@ -247,11 +352,17 @@ export default {
 
 -->CSS
 <style>
+@import url("https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css");
 .map {
   float: left;
   height: 100%;
   width: 100%;
   position: fixed;
   left: 0;
+}
+.mapboxgl-popup {
+  min-width: 200px;
+  max-width: 400px;
+  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 </style>

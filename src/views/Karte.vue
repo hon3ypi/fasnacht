@@ -180,7 +180,7 @@ export default {
             type: "FeatureCollection",
             features: [
               {
-                //Jesuitenplatz
+                //Rathaustreppe
                 type: "Feature",
                 geometry: {
                   type: "Point",
