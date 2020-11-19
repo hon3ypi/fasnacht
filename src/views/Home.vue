@@ -17,12 +17,8 @@
     <div class="box12"></div>
     <p class="titel">Luzerner Fasnacht</p>
   </div>
-<<<<<<< HEAD
     
   </div>
-=======
-
->>>>>>> 83b8336d22e2eeb9b5b6ae83da7160b0fb13640b
 
 </template>
 
@@ -89,7 +85,7 @@ background-color: #ed5250;
   grid-area: 4 / 5 / 7 / 9; 
   font-size: 73px;
   color: white;
-  } 
+  text-align: center;  } 
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT
