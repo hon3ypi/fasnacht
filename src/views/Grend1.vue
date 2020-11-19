@@ -5,11 +5,8 @@
 
    <section class="fritschi parent">
 
-    <p class="child1"><span class="blue">DU</span> hast Bruder Fritschi gewählt</p>
-    <h4 class="child3">Bru <br>
-      der <br>
-      Frit<br>
-      schi</h4>
+    <p class="child1"><span class="blue">DU</span> hast <span class="blue">Bruder Fritschi</span> gewählt</p>
+    <h4 class="child3 blue">Bru<br>der <br>Frit<br>schi</h4>
     <img src="Fritschi.svg" class="child2" >
 
 
@@ -22,7 +19,7 @@
 
 <section class="tagwach">
 
-<h4 class="">tagwach</h4>
+<h4 class="yellow">tagwach</h4>
 <div class="wrapper-video">
     <h6 class="">Kapellplatz, SchmuDO 5 Uhr</h6>
 <video src="" class="xl-vid"></video>
@@ -79,10 +76,7 @@
 }
 .child3 { grid-area: 2 / 9 / 7 / 13;
 border:solid 1px blue;
-font-size: 4em;
-    text-transform:uppercase;
     margin-top:4.15vw;
-    line-height: 110%;
 
 
     }
@@ -92,6 +86,13 @@ border:solid 1px blue;
 
 
     h4{text-align: left;
+    font-size: 4em;
+        text-transform:uppercase;
+            line-height: 110%;
+            font-weight:800;
+
+
+
     
     }
     h5{text-align: left;
@@ -102,7 +103,9 @@ border:solid 1px blue;
     margin-top:0%;}
     h6{text-align: left;}
     p{text-align: left;
-    margin-top:1%}
+    margin-top:1%;
+    font-size: 1.2em;
+    font-weight:600;}
     img{}
     
     
