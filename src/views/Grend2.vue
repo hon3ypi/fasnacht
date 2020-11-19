@@ -1,20 +1,20 @@
 <template>
+<div class="grend2">   
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="reset.css">
-  <div class="grend2">
-    <h1>Grend 2</h1>
+<h1>Grend 2</h1>
 
  <section class="grend">
-        <section class="vid-wrapper">
-            <video class="xl-vid" src=""></video>
-        </section>
+      <!-- <section class="vid-wrapper">
+            <video class="xl-vid" src=""></video> -->
         <p class="dialog">Dä, wo do verbi gloffe esch!</p>
         <img class="" src="">
         <p class="dialog">Do nomol!</p>
-        <span class="dialog-wrap dialog"> <span class="">Das esch jo en cooli </span>
-            <span class="nono"> Larva!</span></span>
-        <span class=""> esch</span>
-        <span class=""> Tabu!</span>
+        
+    <span class="dialog-wrap dialog"> <span class="">Das esch jo en cooli </span>
+        <span class="nono"> Larva!</span></span>
+    <span class="esch"> esch</span>
+    <span class="tabu"> Tabu!</span>
 
         <div class="nono-words">
             <p class="nono">Waggis!</p>
@@ -23,15 +23,14 @@
             <p class="nono">Morgenschtraich!!</p>
         </div>
 
-        <div class="layer"></div>
-        <img class="" src="">
-        <p class="dialog">Dä, wo do verbi gloffe esch!</p>
-        <p class="dialog">Ha grad es Déjà Vue.</p>
-        <p class="dialog">Das esch jo en coolE Grend!</p>
-
-        <div class="vid-wrapper">
-
-            <video src="" class="xl-vid"></video>
+        <div class="layer">
+            <img class="" src="">
+            <p class="dialog">Dä, wo do verbi gloffe esch!</p>
+            <p class="dialog">Ha grad es Déjà Vue.</p>
+            <p class="dialog">Das esch jo en coole Grend!</p>
+        </div>
+        <!--<div class="vid-wrapper">
+            <video src="" class="xl-vid"></video> -->
             <h4>Guugge </h4>
             <p>Rathaustreppe</p>
 
@@ -41,11 +40,8 @@
             <video src="" class="m-vid"></video>
             <video src="" class="m-vid"></video>
             <video src="" class="s-vid"></video>
-
-
-        </div>
-
-    </section>  </div>
+    </section>  
+   </div>
 </template>
 
 -->DAS ESCH FÖR S CSS
@@ -71,6 +67,17 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
+.grend {
+font-size: 60px;
+text-align: center;
+color: black;
+    }
+.nono-words {
+font-size: 100px;
+text-align: center;
+color: black;
+    }
+
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT
