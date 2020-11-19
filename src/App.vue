@@ -1,11 +1,9 @@
 <template>
   <div id="nav">
-    <router-link to="/fasnacht">Fasnacht</router-link> |
     <router-link to="/grend1">Grend 1</router-link> |
     <router-link to="/grend2">Grend 2</router-link> |
     <router-link to="/grend3">Grend 3</router-link> |
-    <router-link to="/map">Map</router-link> |
-    <router-link to="/route">Route</router-link>
+    <router-link to="/grendtest">Grend Test</router-link> 
   </div>
   
   <router-view/>
