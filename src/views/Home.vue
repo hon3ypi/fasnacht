@@ -1,4 +1,5 @@
 <template class="">
+<div>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 <div class="home">
       <div class="boxen">
@@ -16,11 +17,9 @@
     <div class="box11"></div>
     <div class="box12"></div>
   </div>
-    <p class="titel">Luzerner Fasnchat</p>
+    <p class="titel">Luzerner Fasnacht</p>
   </div>
-    <p class="titel">Luzerner Fasnchat</p>
-
-  </div>
+</div>
 
 </template>
 
@@ -32,28 +31,67 @@ html{
 
 .boxen { 
 display: grid; 
+width:auto;
+    height:auto;
 grid-template-columns: repeat(12, 1fr); 
 grid-template-rows: repeat(12, 1fr); 
 grid-column-gap: 0px;
 grid-row-gap: 0px; 
 }
-.box1 { grid-area: 1 / 1 / 4 / 5; } 
-.box2 { grid-area: 1 / 5 / 4 / 9; } 
-.box3 { grid-area: 1 / 9 / 4 / 13; } 
-.box4 { grid-area: 4 / 1 / 7 / 5; } 
-.box5 { grid-area: 4 / 5 / 7 / 9; } 
-.box6 { grid-area: 4 / 9 / 7 / 13; } 
-.box7 { grid-area: 7 / 1 / 10 / 5; } 
-.box8 { grid-area: 7 / 5 / 10 / 9; } 
-.box9 { grid-area: 7 / 9 / 10 / 13; } 
-.box10 { grid-area: 10 / 1 / 13 / 5; } 
-.box11 { grid-area: 10 / 5 / 13 / 9; } 
-.box12 { grid-area: 10 / 9 / 13 / 13; } 
+.box1 { 
+  grid-area: 1 / 1 / 4 / 5;
+  background-color:#4CC9F0;
+  border:solid 1px blue; 
+  } 
+.box2 { 
+  grid-area: 1 / 5 / 4 / 9; 
+  background-color:#7400B8; 
+  } 
+.box3 { 
+  grid-area: 1 / 9 / 4 / 13;
+  background-color:#ED5250;  
+  } 
+.box4 { 
+  grid-area: 4 / 1 / 7 / 5;
+  background-color:#7400B8;  
+  } 
+.box5 { 
+  grid-area: 4 / 5 / 7 / 9;
+  background-color:#ED5250; 
+  } 
+.box6 { 
+  grid-area: 4 / 9 / 7 / 13;
+  background-color:#F8BD4F; 
+  } 
+.box7 { 
+  grid-area: 7 / 1 / 10 / 5;
+  background-color:#ED5250; 
+  } 
+.box8 { 
+  grid-area: 7 / 5 / 10 / 9;
+  background-color:#F8BD4F; 
+  } 
+.box9 { 
+  grid-area: 7 / 9 / 10 / 13;
+  background-color:#86DDB4; 
+  } 
+.box10 { 
+  grid-area: 10 / 1 / 13 / 5;
+  background-color:#F8BD4F; 
+  } 
+.box11 { 
+  grid-area: 10 / 5 / 13 / 9;
+  background-color:#86DDB4; 
+  } 
+.box12 { 
+  grid-area: 10 / 9 / 13 / 13;
+  background-color: #4CC9F0;  
+  } 
+
 .titel { 
   grid-area: 4 / 5 / 7 / 9; 
-  font-family:"" ;
   font-size: 73px;
-  color: white;
+  color:black;
   } 
 </style>
 
