@@ -6,7 +6,7 @@
 
  <section class="grend">
      <section class="vid-wrapper">
-            <video class="xl-vid" src="assets/Rathaustreppen.mp4"></video>
+            <video class="grend_vid" src="assets/Rathaustreppen.mp4"></video>
         <p class="dialog">Dä, wo do verbi gloffe esch!</p>
         <img class="" src="">
         <p class="dialog">Do nomol!</p>
@@ -57,7 +57,7 @@
 .html{
   font-family: 'Noto Sans', sans-serif;
 }
- 
+ /*
 .parent {
     display: grid;
     border: 1px solid red;
@@ -65,9 +65,10 @@
     height:auto;
     grid-template-columns: repeat(12, 8.33vw);
     grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
-    grid-column-gap: 0px;
+    /*grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
+    } */
+
 .grend {
 font-size: 60px;
 text-align: center;
@@ -75,6 +76,7 @@ color: black;
     }
 .nono-words {
 font-size: 100px;
+text-decoration-line: line-through;
 text-align: center;
 color: black;
     }
