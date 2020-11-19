@@ -1,4 +1,5 @@
 <template>
+
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <div class="grend3">
@@ -397,12 +398,16 @@ position:relative;
 
 
 </style>
-
+ 
 -->DAS ESCH FÖR S JAVASCRIPT
+<script>
+
+<script src="../../jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
 
-
-    gsap.registerPlugin(ScrollTrigger);
+ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".container .panel");
 
@@ -424,5 +429,4 @@ gsap.to(sections, {
     end: () => "+=" + (document.querySelector(".container").offsetWidth / 3.4)
   }
 });
-<script>
 </script>
