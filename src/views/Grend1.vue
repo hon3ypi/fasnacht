@@ -1,8 +1,8 @@
-<template class="parent">
+<template class="">
   <div class="grend1 ">
 
-   <section class="fritschi">
-     
+   <section class="fritschi parent">
+
     <p class="child1">DU hast Bruder Fritschi gewählt</p>
     <h4 class="child3">Bruder Fritschi</h4>
     <img src="Fritschi.svg" class="child2" >
@@ -53,7 +53,7 @@
     }
   .child1 { grid-area: 2 / 2 / 3 / 6; }
 
-  .child2{    grid-area: 2 / 6 / 8 / 11;;
+  .child2{    grid-area: 2 / 6 / 8 / 11;
   width:100%;
   height:auto;
 }
