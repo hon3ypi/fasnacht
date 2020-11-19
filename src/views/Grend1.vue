@@ -28,9 +28,10 @@
 
 <p class="child12">1-0-0- t-a-u-s-e-n-d-e- P-a-p-i-e-r- s-c-h-n-i-t-z-e-l z-e-r-s-c-h-n-i-t-t-e-n-e T-e-l-e-f-o-n-b-ü-c-h-e-r-n- r-e-g-n-e-t-e-s-a-n-d-e-r-T-a-g-w-a-c-h-e-a-u-f-d-e-n-K-a-p-e-l-l-p-l-a-t-z-h-i-n-u-n-t-e-r-.
 </p>
-<img class ="" src="">
 
 </section>
+<div class="footer " href="http://localhost:8081/#/map"> <div class="footercont">Back to Map</div></div>
+
   </div>
 </template>
 
@@ -119,11 +120,12 @@ height:56.2275vw;}
     width:100vw;
     height:auto;
     grid-template-columns: repeat(12, 8.33vw);
-    grid-template-rows: repeat(45, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
+    grid-template-rows: repeat(25, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
 
+<<<<<<< HEAD
 .child5 { 
     grid-area: 2 / 2 / 4 / 6; 
     margin-top:0;
@@ -145,6 +147,30 @@ height:56.2275vw;}
     grid-area: 20 / 3 / 45 / 11;
     font-size:8.5em; 
     }
+=======
+.child5 { grid-area: 2 / 2 / 4 / 6; 
+margin-top:0;
+align-self: flex-end;
+font-size:7em;}
+.child6 {  grid-area: 4 / 1 / 13 / 13; }
+
+
+.child7 { grid-area: 5 / 2 / 8 / 6; 
+margin:0;
+padding:0;}
+
+.child8{background-color:red;
+grid-area: 13 / 3 / 18 / 8;}
+
+.child12{ grid-area: 20 / 3 / 45 / 11;
+font-size:8.5em; }
+
+
+   
+    img{overflow:hidden;}
+    
+    
+>>>>>>> 456a94314e2936f84e3fb9ef378049b71c6cd01d
 
     img{overflow:hidden;}  
 
@@ -165,6 +191,20 @@ height:56.2275vw;}
     width:100%;
     height:auto;
     }
+
+.footer{ position:relative;
+  width:100vw;
+height:16.66vw;
+background-color:#86DDB4;
+color: white;
+}
+.footercont{
+padding-left:16.66vw;;
+  position:absolute;
+padding-top:auto;
+top:35%;
+font-size: 2em;
+}
 
 </style>
 
