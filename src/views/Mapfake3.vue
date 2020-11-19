@@ -247,19 +247,11 @@ export default {
 
 -->CSS
 <style>
-@import url("https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css");
 .map {
   float: left;
-  height: 50%;
+  height: 100%;
   width: 100%;
   position: fixed;
   left: 0;
-}
-
-.test {
-  height: 50%;
-  width: 100%;
-  position: absolute;
-  top: 500px;
 }
 </style>
