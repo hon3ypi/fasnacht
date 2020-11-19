@@ -1,4 +1,5 @@
 <template class="">
+<div>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 <div class="home boxen">
     <div class="box1"></div>
@@ -14,11 +15,11 @@
     <div class="box10"></div>
     <div class="box11"></div>
     <div class="box12"></div>
-        <p class="titel">Luzerner Fasnchat</p>
 
   </div>
-  
-
+    <p class="titel">Luzerner Fasnacht</p>
+  </div>
+</div>
 
 </template>
 
@@ -65,7 +66,6 @@ border: 1px solid red;
 } 
 .titel { 
   grid-area: 4 / 5 / 7 / 9; 
-  font-family:"" ;
   font-size: 73px;
   color: black;
   } 
