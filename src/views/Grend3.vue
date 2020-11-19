@@ -1,4 +1,6 @@
 <template>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   <div class="grend3">
     <h1>Huereaff</h1>
     <section class="huerenaff">
@@ -121,6 +123,27 @@
 
 -->DAS ESCH FÖR S CSS
 <style>
+/*color*/
+.blue{color:#4CC9F0;}
+.yellow{color: #F8BD4F;}
+.red{color:#ED5250;}
+.green{color:#86DDB4;}
+.purple{color:#701ABF;}
+ 
+ .html{
+  font-family: 'Noto Sans', sans-serif;
+}
+.parent {
+    display: grid;
+    border: 1px solid red;
+    width:100vw;
+    height:auto;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT

@@ -1,10 +1,12 @@
 <template class="">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <div class="grend1 ">
 
    <section class="fritschi parent">
 
-    <p class="child1">DU hast Bruder Fritschi gewählt</p>
-    <h4 class="child3">Bruder Fritschi</h4>
+    <p class="child1"><span class="blue">DU</span> hast <span class="blue">Bruder Fritschi</span> gewählt</p>
+    <h4 class="child3 blue">Bru<br>der <br>Frit<br>schi</h4>
     <img src="Fritschi.svg" class="child2" >
 
 
@@ -17,7 +19,7 @@
 
 <section class="tagwach">
 
-<h4 class="">tagwach</h4>
+<h4 class="yellow">tagwach</h4>
 <div class="wrapper-video">
     <h6 class="">Kapellplatz, SchmuDO 5 Uhr</h6>
 <video src="" class="xl-vid"></video>
@@ -40,6 +42,18 @@
 
 -->DAS ESCH FÖR S CSS
 <style>
+/*color*/
+.blue{color:#4CC9F0;}
+.yellow{color: #F8BD4F;}
+.red{color:#ED5250;}
+.green{color:#86DDB4;}
+.purple{color:#701ABF;}
+ 
+.html{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
 /* grid*/
 .parent {
     display: grid;
@@ -51,21 +65,47 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-  .child1 { grid-area: 2 / 2 / 3 / 6; }
+  .child1 { grid-area: 2 / 2 / 3 / 6; 
+  border:solid 1px blue;
+  }
 
   .child2{    grid-area: 2 / 6 / 8 / 11;
   width:100%;
   height:auto;
+  border:solid 1px blue;
 }
-.child3 { grid-area: 2 / 9 / 7 / 13; }
-.child4 { grid-area: 7 / 2 / 13 / 7; }
+.child3 { grid-area: 2 / 9 / 7 / 13;
+border:solid 1px blue;
+    margin-top:4.15vw;
 
 
-    h1{}
-    h4{}
-    h5{}
-    h6{}
-    p{}
+    }
+.child4 { grid-area: 7 / 2 / 13 / 7; 
+border:solid 1px blue;
+}
+
+
+    h4{text-align: left;
+    font-size: 4em;
+        text-transform:uppercase;
+            line-height: 110%;
+            font-weight:800;
+
+
+
+    
+    }
+    h5{text-align: left;
+    font-size:2em;
+    font-weight: 900;
+    text-align: start;
+    margin-bottom: 0%;
+    margin-top:0%;}
+    h6{text-align: left;}
+    p{text-align: left;
+    margin-top:1%;
+    font-size: 1.2em;
+    font-weight:600;}
     img{}
     
     
