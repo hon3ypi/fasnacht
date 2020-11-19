@@ -1,6 +1,6 @@
 <template>
   <div class="route">
-    <div ref="container" class="map"></div>
+    <div ref="container" class="map"></div> 
   </div>
 </template>
 
@@ -45,6 +45,6 @@ export default {
   height: 100%;
   width: 100%;
   position: fixed;
-  left: 0;
+  left: 200px;
 }
 </style>
