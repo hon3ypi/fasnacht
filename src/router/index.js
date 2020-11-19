@@ -5,6 +5,7 @@ import Route from '../views/Route.vue'
 import Grend1 from '../views/Grend1.vue'
 import Grend2 from '../views/Grend2.vue'
 import Grend3 from '../views/Grend3.vue'
+import GrendTest from '../views/GrendTest.vue'
 import Home from '../views/Home.vue'
 
 
@@ -43,6 +44,11 @@ const routes = [
     path: '/grend3',
     name: 'Grend3',
     component: Grend3
+  },
+  {
+    path: '/grendtest',
+    name: 'GrendTest',
+    component: GrendTest
   }
 
 ]

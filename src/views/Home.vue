@@ -17,8 +17,12 @@
     <div class="box12"></div>
     <p class="titel">Luzerner Fasnacht</p>
   </div>
+<<<<<<< HEAD
     
   </div>
+=======
+
+>>>>>>> 83b8336d22e2eeb9b5b6ae83da7160b0fb13640b
 
 </template>
 
