@@ -1,14 +1,14 @@
-<template>
-  <div class="grend1 parent">
-    <h1>Fritschi</h1>
+<template class="parent">
+  <div class="grend1 ">
 
    <section class="fritschi">
-    <p class="">DU hast Bruder Fritschi gewählt</p>
-    <h4 class="">Bruder Fritschi</h4>
-    <img src="/imgvid/Fritschi.svg" class="child3" >
+     
+    <p class="child1">DU hast Bruder Fritschi gewählt</p>
+    <h4 class="child3">Bruder Fritschi</h4>
+    <img src="Fritschi.svg" class="child2" >
 
 
-   <span class="para-wrapper">
+   <span class="para-wrapper child4">
     <h5>Gute Wahl</h5>
 <p class=""> Unübersehbar. Mit ehrfurchtgebietender gefurchter Holzmaske, langem Bart und im blauweissen Luzerner Staatsmantel. Einige sehen in ihm die mythische Symbolfigur eines heidnischen Fruchtbarkeitskults. Wahrscheinlicher ist, dass sein Vorbild ein «trinkfreudiger» Luzerner Landsknecht namens Fridolin (Friedrich, Fritschi) ist, der in der Schlacht von Ragaz 1446 am 6. März (Fridolinstag) beim Sieg der Eidgenossen über die Österreicher mitkämpfte.
     Heute eröffnet er mit der Fritschifamilie am Schmudo die Fasnacht. Folge ihm. Er wird dir Orte zeigen, die du noch nicht kennst.  </p>
@@ -44,15 +44,22 @@
 .parent {
     display: grid;
     border: 1px solid red;
+    width:100vw;
+    height:auto;
     grid-template-columns: repeat(12, 8.33vw);
     grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-  .child3{    grid-area: 6 / 2 / 10 / 7; 
+  .child1 { grid-area: 2 / 2 / 3 / 6; }
+
+  .child2{    grid-area: 2 / 6 / 8 / 11;;
   width:100%;
   height:auto;
 }
+.child3 { grid-area: 2 / 9 / 7 / 13; }
+.child4 { grid-area: 7 / 2 / 13 / 7; }
+
 
     h1{}
     h4{}
