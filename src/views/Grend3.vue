@@ -1,4 +1,6 @@
 <template>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   <div class="grend3">
     <h1>Huereaff</h1>
     <section class="huerenaff">
@@ -128,6 +130,9 @@
 .green{color:#86DDB4;}
 .purple{color:#701ABF;}
  
+ .html{
+  font-family: 'Noto Sans', sans-serif;
+}
 .parent {
     display: grid;
     border: 1px solid red;

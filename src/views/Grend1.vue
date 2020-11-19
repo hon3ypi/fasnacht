@@ -1,10 +1,15 @@
 <template class="">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <div class="grend1 ">
 
    <section class="fritschi parent">
 
-    <p class="child1">DU hast Bruder Fritschi gewählt</p>
-    <h4 class="child3">Bruder Fritschi</h4>
+    <p class="child1"><span class="blue">DU</span> hast Bruder Fritschi gewählt</p>
+    <h4 class="child3">Bru <br>
+      der <br>
+      Frit<br>
+      schi</h4>
     <img src="Fritschi.svg" class="child2" >
 
 
@@ -40,6 +45,18 @@
 
 -->DAS ESCH FÖR S CSS
 <style>
+/*color*/
+.blue{color:#4CC9F0;}
+.yellow{color: #F8BD4F;}
+.red{color:#ED5250;}
+.green{color:#86DDB4;}
+.purple{color:#701ABF;}
+ 
+.html{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
 /* grid*/
 .parent {
     display: grid;
@@ -52,7 +69,8 @@
     grid-row-gap: 0px;
     }
   .child1 { grid-area: 2 / 2 / 3 / 6; 
-  border:solid 1px blue;}
+  border:solid 1px blue;
+  }
 
   .child2{    grid-area: 2 / 6 / 8 / 11;
   width:100%;
@@ -61,18 +79,30 @@
 }
 .child3 { grid-area: 2 / 9 / 7 / 13;
 border:solid 1px blue;
-font-size: 5em;
-    text-transform: capitalize;}
+font-size: 4em;
+    text-transform:uppercase;
+    margin-top:4.15vw;
+    line-height: 110%;
+
+
+    }
 .child4 { grid-area: 7 / 2 / 13 / 7; 
-border:solid 1px blue;}
+border:solid 1px blue;
+}
 
 
     h4{text-align: left;
     
     }
-    h5{text-align: left;}
+    h5{text-align: left;
+    font-size:2em;
+    font-weight: 900;
+    text-align: start;
+    margin-bottom: 0%;
+    margin-top:0%;}
     h6{text-align: left;}
-    p{text-align: left;}
+    p{text-align: left;
+    margin-top:1%}
     img{}
     
     
