@@ -6,23 +6,25 @@
   <div class="dialogwrapper parent">
 
 
-    <p class="dialog child1">Hey Huerenaff <br> Wie gohts?</p>
+    <p class="dialog kid1">Hey Huerenaff <br> Wie gohts?</p>
 
-    <p class="dialog child2">Danke guet ond der Huerenaff?</p>
-    <p class="child3 dialog">Los Mou Huerenaff. Gömmer es Kafi Huerenaff
+    <p class="dialog kid2">Danke guet ond der Huerenaff?</p>
+    <p class="kid3 dialog">Los Mou Huerenaff. Gömmer es Kafi Huerenaff
       go näh?</p>
-    <p class="dialog child4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
+    <p class="dialog kid4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
   </div>
 
-  <video src="getraenke_holen.mp4" class="xl_vid "></video>
+  <div id="getraenke_holen.mp4" class="xl_vid ">
+<!--<my-video :sources="video.sources" :options="video.options"></my-video>-->
+  </div>
 <div class="parent2">
-  <p class= " child5 dialog ">«Gärn en Tee.»</p>
+  <p class= " kid5 dialog ">«Gärn en Tee.»</p>
 
-    <p class="dialog child6">«Nor wenn du Gönnerin wersch!»</p>
-    <p class="child7 dialog">«Onbedengt.»</p>
-    <p class="dialog child8">«Super, Ond was fÖr en Tee döffs sii – met oder ohni Schuss?» </p>
-    <p class="dialog child9">«Met Schuss dänk, s esch d Fasnacht!» </p>
-    <p class="dialog child10">«Das freut mech – was för eine denn?» </p>
+    <p class="dialog kid6">«Nor wenn du Gönnerin wersch!»</p>
+    <p class="dialog kid7">«Onbedengt.»</p>
+    <p class="dialog kid8">«Super, Ond was fÖr en Tee döffs sii – met oder ohni Schuss?» </p>
+    <p class="dialog kid9">«Met Schuss dänk, s esch d Fasnacht!» </p>
+    <p class="dialog kid10">«Das freut mech – was för eine denn?» </p>
 
 </div>
 
@@ -46,7 +48,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="@/assets/text_kafi_huerenaff.svg" alt="">
+              <img class="drink" src="@/assets/text_kafi_huerenaff.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -63,7 +65,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="@/assets/text_Holdrio.svg" alt="">
+              <img class="drink" src="@/assets/text_Holdrio.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -79,7 +81,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="@/assets/text_Mönze-zwätschge.svg" alt="">
+              <img class="drink" src="@/assets/text_Mönze-zwätschge.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -95,8 +97,8 @@
         <div class="col-xs-12">
           <div class="margin-75px"></div>
           <div class="row">
-            <div class="col-xs-6">
-              <img src="@/assets/text_Häxetee.svg" alt="">
+            <div class="col-xs-6 drink">
+              <img class="" src="@/assets/text_Häxetee.svg" alt="">
             </div>
 
             
@@ -114,32 +116,6 @@
 <!--dialog3-->
 
 <!--
-  <div class="drink">
-    <p class="drinkname">Kafi Huerenaff</p>
-    <img class="" src="">
-    <p class="drinkcontent">starken Kaffee mit Apfel- oder Birnenträsch</p>
-  </div>
-  </div>
- 
-  
-    <div class="drink">
-      <p class="drinkname">Holdrio</p>
-      <img class="" src="">
-      <p class="drinkcontent">Hagebuttetee mit Zwetschenschnaps</p>
-    </div>
-
-    <div class="drink">
-      <p class="drinkname">«Mönze-Zwätschge»</p>
-      <img class="" src="">
-      <p class="drinkcontent">Pfefferminztee mit zwetschenschnaps</p>
-    </div>
-
-    <div class="drink">
-      <p class="drinkname">Häxetee</p>
-      <img class="" src="">
-      <p class="drinkcontent">Pfefferminztee mit Apfel oder Birneträsch</p>
-    </div>
-
 
     <div class="wrap-it">
       <p class="dialog">“Gärn es Tee,eins mit Schnaps, ich bin ja nicht krank.”</p>
@@ -234,6 +210,10 @@
   html {
     font-family: 'Noto Sans', sans-serif;
   }
+  .p{
+    color:black;
+    background-color:none;
+  }
 
   .parent {
 
@@ -247,7 +227,7 @@
     grid-row-gap: 0px;
   }
   
-
+.drink{margin:10px;};
 
   .dialog {
     text-transform: uppercase;
@@ -257,22 +237,22 @@
 
   }
 
-  .child1 {
+  .kid1 {
     grid-area: 2 / 2 / 4 / 9;
     border: solid 1px red;
   }
 
-  .child2 {
+  .kid2 {
     text-align: right;
 
     grid-area: 5 / 6/ 6/ 12;
   }
 
-  .child3 {
+  .kid3 {
     grid-area: 8 / 2 / 10 / 9;
   }
 
-  .child4 {
+  .kid4 {
     text-align: right;
 
     grid-area: 13 / 6/ 15 / 12;
@@ -290,32 +270,32 @@ position:relative;
     grid-row-gap: 0px;
   }
 
-  .child5 {
+  .kid5 {
     grid-area: 2 / 2 / 4 / 9;
     border: solid 1px red;
   }
 
-  .child6 {
+  .kid6 {
     text-align: right;
 
     grid-area: 5 / 6/ 6/ 12;
   }
 
-  .child7 {
+  .kid7 {
     grid-area: 8 / 2 / 10 / 9;
   }
 
-  .child8 {
+  .kid8 {
     text-align: right;
     grid-area: 10 / 6/ 15 / 12;
   }
 
 
- .child9 {
+ .kid9 {
     grid-area: 16 / 2 / 20 / 9;
   }
 
-  .child10 {
+  .kid10 {
     text-align: right;
 
     grid-area: 20 / 5/ 24 / 12;
@@ -388,6 +368,7 @@ position:relative;
 
 
 .spacer {
+  margin-top:100px;
   position: relative;
   display: block;
   background: #F8BD4F;
@@ -434,6 +415,27 @@ gsap.to(sections, {
 
   }
 }
+/*
+import myVideo from 'vue-video'
+export default {
+    data () {
+        return {
+            video: {
+                sources: [{
+                    src: '/assets/getraenke_holen.mp4',
+                    type: 'video/mp4'
+                }],
+                options: {
+                    autoplay: true,
+                    volume: 0.6,
+                }
+            }
+        }
+    },
+    components: {
+        myVideo
+    }
+}*/
 
 
 

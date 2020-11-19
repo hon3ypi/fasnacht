@@ -1,7 +1,5 @@
 <template>
 <div class="grend2">   
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="reset.css">
 <h1>Grend 2</h1>
 
  <section class="grend">
@@ -47,6 +45,10 @@
 
 -->DAS ESCH FÖR S CSS
 <style>
+
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap") ;
+@import url("reset.css");
 /*color*/
 .blue{color:#4CC9F0;}
 .yellow{color: #F8BD4F;}
