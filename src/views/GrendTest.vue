@@ -10,6 +10,7 @@ import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
 import fritschi from '../assets/fritschimarker.png';
 import grend from '../assets/grendmarker.png';
+import huereaff from '../assets/huereaffmarker.png';
 
 //Stuff woni noni wörkli chegge
 export default {
@@ -203,7 +204,7 @@ export default {
       );
 
       map.loadImage(
-        fritschi,
+        huereaff,
         function (error, image) {
           if (error) throw error;
           map.addImage("huereaff", image);
