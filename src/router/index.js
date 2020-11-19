@@ -1,12 +1,9 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Fasnacht from '../views/Fasnacht.vue'
-import Map from '../views/Map.vue'
-import Route from '../views/Route.vue'
+import Home from '../views/Home.vue'
 import Grend1 from '../views/Grend1.vue'
 import Grend2 from '../views/Grend2.vue'
 import Grend3 from '../views/Grend3.vue'
-import GrendTest from '../views/GrendTest.vue'
-import Testsite from '../views/Testsite.vue'
+import Karte from '../views/Karte.vue'
 import Mapfake1 from '../views/Mapfake1.vue'
 import Mapfake2 from '../views/Mapfake2.vue'
 import Mapfake3 from '../views/Mapfake3.vue'
@@ -15,19 +12,9 @@ import Mapfake3 from '../views/Mapfake3.vue'
 
 const routes = [
   {
-    path: '/fasnacht',
-    name: 'Fasnacht',
-    component: Fasnacht
-  },
-  {
-    path: '/map',
-    name: 'Map',
-    component: Map
-  },
-  {
-    path: '/route',
-    name: 'Route',
-    component: Route
+    path: '/',
+    name: 'Home',
+    component: Home
   },
   {
     path: '/grend1',
@@ -45,14 +32,9 @@ const routes = [
     component: Grend3
   },
   {
-    path: '/grendtest',
-    name: 'GrendTest',
-    component: GrendTest
-  },
-  {
-    path: '/testsite',
-    name: 'Testsite',
-    component: Testsite
+    path: '/karte',
+    name: 'Karte',
+    component: Karte
   },
   {
     path: '/mapfake1',

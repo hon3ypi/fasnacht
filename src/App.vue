@@ -3,7 +3,7 @@
     <router-link to="/grend1">Grend 1</router-link> |
     <router-link to="/grend2">Grend 2</router-link> |
     <router-link to="/grend3">Grend 3</router-link> |
-    <router-link to="/grendtest">Grend Test</router-link> 
+    <router-link to="/karte">Karte</router-link> 
   </div>
   
   <router-view/>
