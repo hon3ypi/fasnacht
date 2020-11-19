@@ -29,7 +29,6 @@ html{
 }
 
 .boxen { 
-border: solid 1px red;
 display: grid; 
 grid-template-columns: repeat(12, 1fr); 
 grid-template-rows: repeat(12, 1fr); 
