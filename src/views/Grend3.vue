@@ -379,7 +379,7 @@ position:relative;
  
 -->DAS ESCH FÖR S JAVASCRIPT
 <script>
-
+/*
  gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".container .panel");
@@ -401,5 +401,5 @@ gsap.to(sections, {
     // Base vertical scrolling on how wide the container is so it feels more natural.
     end: () => "+=" + (document.querySelector(".container").offsetWidth / 3.4)
   }
-});
+});*/
 </script>
