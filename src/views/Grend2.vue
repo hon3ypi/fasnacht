@@ -83,4 +83,16 @@ color: black;
 
 -->DAS ESCH FÖR S JAVASCRIPT
 <script>
+
+export default {
+  name: "Grend",
+  data: function () {
+    return {
+      ort: [],
+    };
+  },
+  mounted: async function () {
+
+  }
+}
 </script>

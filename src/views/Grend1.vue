@@ -182,5 +182,17 @@
 
 -->DAS ESCH FÖR S JAVASCRIPT
 <script>
+export default {
+  name: "Fritschi",
+  data: function () {
+    return {
+      ort: [],
+    };
+  },
+  mounted: async function () {
+
+  }
+}
+
 </script>
 
