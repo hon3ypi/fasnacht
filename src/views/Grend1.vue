@@ -1,11 +1,11 @@
 <template>
-  <div class="grend1">
+  <div class="grend1 parent">
     <h1>Fritschi</h1>
 
    <section class="fritschi">
     <p class="">DU hast Bruder Fritschi gewählt</p>
     <h4 class="">Bruder Fritschi</h4>
-    <img src="">
+    <img src="/imgvid/Fritschi.svg" class="child3" >
 
 
    <span class="para-wrapper">
@@ -40,6 +40,36 @@
 
 -->DAS ESCH FÖR S CSS
 <style>
+/* grid*/
+.parent {
+    display: grid;
+    border: 1px solid red;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+  .child3{    grid-area: 6 / 2 / 10 / 7; 
+  width:100%;
+  height:auto;
+}
+
+    h1{}
+    h4{}
+    h5{}
+    h6{}
+    p{}
+    img{}
+    
+    
+
+   /*Videos difffernt sizes multiple of grid*/ 
+.xl-vid{}
+.m-vid{}
+.s-vid{}
+
+.video-wrapper{}
+.para-wrapper{}
 
 </style>
 
