@@ -15,8 +15,10 @@
     <div class="box10"></div>
     <div class="box11"></div>
     <div class="box12"></div>
-    <p class="titel">Luzerner Fasnacht</p>
+        <p class="titel">Luzerner Fasnacht</p>
+
   </div>
+
 
 </template>
 
@@ -27,14 +29,18 @@ html{
 }
 
 .boxen { 
+border: solid 1px red;
 display: grid; 
 grid-template-columns: repeat(12, 1fr); 
 grid-template-rows: repeat(12, 1fr); 
 grid-column-gap: 0px;
 grid-row-gap: 0px; 
+width:100vw;
+height:100vh;
 }
 .box1 { grid-area: 1 / 1 / 4 / 5; 
 background-color: #4CC9F0;
+
 } 
 .box2 { grid-area: 1 / 5 / 4 / 9; 
 background-color: #7400b8;
@@ -80,10 +86,11 @@ background-color: #ed5250;
   background-color: #4CC9F0;
 } 
 .titel { 
-  grid-area: 4 / 5 / 7 / 9; 
-  font-size: 73px;
+  font-size: 100px;
   color: white;
-  
+grid-area: 4/5/7/9;
+text-align: center;
+
   } 
 </style>
 

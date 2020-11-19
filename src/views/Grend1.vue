@@ -22,7 +22,7 @@
 
 <h4 class="yellow child5">tagwach</h4>
 <div class="wrapper-video yellowbg child6">
-<video src="" class="xl-vid"></video>
+<video src="assets/bruele.mp4" class="xl-vid"></video>
 </div>
     <h6 class="child7">Kapellplatz, SchmuDO 5 Uhr</h6>
 
@@ -31,7 +31,7 @@
 <p class="child7">brüele</p>
 <p class="child7">Urknall</p>
 
-<video src="child8" class="m-vid"></video>
+<video src="assets/Foetzeliraege.mp4" class="child8 m-vid"></video>
 
 
 <p class="child12">1-0-0- t-a-u-s-e-n-d-e- P-a-p-i-e-r- s-c-h-n-i-t-z-e-l z-e-r-s-c-h-n-i-t-t-e-n-e T-e-l-e-f-o-n-b-ü-c-h-e-r-n- r-e-g-n-e-t-e-s-a-n-d-e-r-T-a-g-w-a-c-h-e-a-u-f-d-e-n-K-a-p-e-l-l-p-l-a-t-z-h-i-n-u-n-t-e-r-.
@@ -80,7 +80,7 @@ height:56.2275vw;}
     h6{text-align: left;
     padding-top:5%;
     padding-left:3%;
-    font-size:1em;}
+    font-size:2em;}
     p{text-align: left;
     margin-top:1%;
     font-size: 1.2em;
@@ -116,7 +116,7 @@ border:solid 1px blue;
 
 
     }
-.child4 { grid-area: 7 / 2 / 13 / 7; 
+.child4 { grid-area: 7 / 2 / 13 / 5; 
 border:solid 1px blue;
 }
 
@@ -128,7 +128,7 @@ border:solid 1px blue;
     width:100vw;
     height:auto;
     grid-template-columns: repeat(12, 8.33vw);
-    grid-template-rows: repeat(30, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
+    grid-template-rows: repeat(45, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -143,8 +143,11 @@ align-self: flex-end;}
 margin:0;
 padding:0;}
 
-.child12{ grid-area: 20 / 3 / 25 / 11;
-font-size:3.5em; }
+.child8{background-color:red;
+grid-area: 13 / 3 / 18 / 8;}
+
+.child12{ grid-area: 20 / 3 / 45 / 11;
+font-size:8.5em; }
 
 
    
@@ -153,9 +156,12 @@ font-size:3.5em; }
     
 
    /*Videos difffernt sizes multiple of grid*/ 
-.xl-vid{}
-.m-vid{}
-.s-vid{}
+.xl-vid{width:100%;
+height:100%}
+.m-vid{width:100%;
+height:100%}
+.s-vid{width:100%;
+height:100%}
 
 .video-wrapper{width:100%;
 height:auto;}
