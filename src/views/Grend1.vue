@@ -6,26 +6,29 @@
    <section class="fritschi parent">
 
     <p class="child1"><span class="blue">DU</span> hast <span class="blue">Bruder Fritschi</span> gewählt</p>
+    <img src="../assets/BruderFritschi.svg" class="child2" >
     <h4 class="child3 blue">Bru<br>der <br>Frit<br>schi</h4>
-    <img src="Fritschi.svg" class="child2" >
 
 
-   <span class="para-wrapper child4">
+   <span class="child4">
     <h5>Gute Wahl</h5>
 <p class=""> Unübersehbar. Mit ehrfurchtgebietender gefurchter Holzmaske, langem Bart und im blauweissen Luzerner Staatsmantel. Einige sehen in ihm die mythische Symbolfigur eines heidnischen Fruchtbarkeitskults. Wahrscheinlicher ist, dass sein Vorbild ein «trinkfreudiger» Luzerner Landsknecht namens Fridolin (Friedrich, Fritschi) ist, der in der Schlacht von Ragaz 1446 am 6. März (Fridolinstag) beim Sieg der Eidgenossen über die Österreicher mitkämpfte.
     Heute eröffnet er mit der Fritschifamilie am Schmudo die Fasnacht. Folge ihm. Er wird dir Orte zeigen, die du noch nicht kennst.  </p>
 </span>
 </section> 
 
-<section class="tagwach">
+<section class="tagwach parent2">
 
-<h4 class="yellow">tagwach</h4>
-<div class="wrapper-video">
-    <h6 class="">Kapellplatz, SchmuDO 5 Uhr</h6>
+<h4 class="yellow  child5">tagwach</h4>
+<div class="wrapper-video yellowbg child6">
 <video src="" class="xl-vid"></video>
 </div>
-<p class="">brüele</p>
-<p class="">Urknall</p>
+    <h6 class="child7">Kapellplatz, SchmuDO 5 Uhr</h6>
+
+
+
+<p class="free">brüele</p>
+<p class="free">Urknall</p>
 
 <video src="" class="m-vid"></video>
 <video src="" class="s-vid"></video>
@@ -45,14 +48,42 @@
 /*color*/
 .blue{color:#4CC9F0;}
 .yellow{color: #F8BD4F;}
+.yellowbg{background-color: #F8BD4F;}
 .red{color:#ED5250;}
 .green{color:#86DDB4;}
 .purple{color:#701ABF;}
  
 .html{
   font-family: 'Noto Sans', sans-serif;
+  margin:0%;
+  padding:0%
 }
 
+
+ h4{text-align: left;
+    font-size: 4em;
+        text-transform:uppercase;
+            line-height: 110%;
+            font-weight:800;
+            margin-bottom:0;
+
+
+
+    
+    }
+    h5{text-align: left;
+    font-size:2em;
+    font-weight: 900;
+    text-align: start;
+    margin-bottom: 10%;
+    margin-top:5%;}
+    h6{text-align: left;
+    padding-top:3%;
+    padding-left:3%;}
+    p{text-align: left;
+    margin-top:1%;
+    font-size: 1.2em;
+    font-weight:600;}
 
 /* grid*/
 .parent {
@@ -85,27 +116,32 @@ border:solid 1px blue;
 }
 
 
-    h4{text-align: left;
-    font-size: 4em;
-        text-transform:uppercase;
-            line-height: 110%;
-            font-weight:800;
 
-
-
-    
+.parent2 {
+    display: grid;
+    border: 1px solid red;
+    width:100vw;
+    height:auto;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     }
-    h5{text-align: left;
-    font-size:2em;
-    font-weight: 900;
-    text-align: start;
-    margin-bottom: 0%;
-    margin-top:0%;}
-    h6{text-align: left;}
-    p{text-align: left;
-    margin-top:1%;
-    font-size: 1.2em;
-    font-weight:600;}
+
+.child5 { grid-area: 2 / 2 / 4 / 6; 
+margin-top:0;
+align-self: flex-end;}
+.child6 {  grid-area: 4 / 1 / 13 / 13; }
+
+
+.child7 { grid-area: 5 / 2 / 8 / 6; 
+margin:0;
+padding:0;}
+
+.child8{.div8 { grid-area: 14 / 3 / 20 / 11; }
+
+}
+   
     img{}
     
     
@@ -115,8 +151,8 @@ border:solid 1px blue;
 .m-vid{}
 .s-vid{}
 
-.video-wrapper{}
-.para-wrapper{}
+.video-wrapper{width:100%;
+height:auto;}
 
 </style>
 
