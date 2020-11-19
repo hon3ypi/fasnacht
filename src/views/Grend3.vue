@@ -2,12 +2,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
-
-
-
   <div class="grend3">
- 
-
   <div class="dialogwrapper parent">
 
 
@@ -31,7 +26,7 @@
 
 </div>
 
-<!--
+
 <div class="spacer"></div>
 
 <div class="side-scrolling-wrapper">
@@ -51,7 +46,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="text_kafi huerenaff.svg" alt="">
+              <img src="Kafi_Huerenaff.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -68,7 +63,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="text_Holdrio.svg" alt="">
+              <img src="Holdrio_1.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -84,7 +79,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="text_Mönze-zwätschge.svg" alt="">
+              <img src="Mönze_Zwätschge.svg" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -101,7 +96,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img src="text_Häxetee.svg" alt="">
+              <img src="häxetee.svg" alt="">
             </div>
 
             
@@ -115,8 +110,35 @@
 
 </div>
 
-<div class="spacer"></div>-->
-<!--dialog3--
+<div class="spacer"></div>
+<!--dialog3-->
+
+<!--
+  <div class="drink">
+    <p class="drinkname">Kafi Huerenaff</p>
+    <img class="" src="">
+    <p class="drinkcontent">starken Kaffee mit Apfel- oder Birnenträsch</p>
+  </div>
+  </div>
+ 
+  
+    <div class="drink">
+      <p class="drinkname">Holdrio</p>
+      <img class="" src="">
+      <p class="drinkcontent">Hagebuttetee mit Zwetschenschnaps</p>
+    </div>
+
+    <div class="drink">
+      <p class="drinkname">«Mönze-Zwätschge»</p>
+      <img class="" src="">
+      <p class="drinkcontent">Pfefferminztee mit zwetschenschnaps</p>
+    </div>
+
+    <div class="drink">
+      <p class="drinkname">Häxetee</p>
+      <img class="" src="">
+      <p class="drinkcontent">Pfefferminztee mit Apfel oder Birneträsch</p>
+    </div>
 
 
     <div class="wrap-it">
@@ -372,8 +394,6 @@ position:relative;
   background-color: white;
   
 }
-
-
 
 </style>
  

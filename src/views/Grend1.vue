@@ -17,12 +17,12 @@
 </section> 
 
 <section class="tagwach parent2">
-
 <h4 class="yellow child5">tagwach</h4>
+<h6 class="child7">Kapellplatz, SchmuDO 5:00 Uhr</h6>
 <div class="wrapper-video yellowbg child6">
-<video src="assets/bruele.mp4" class="tagwach_video" controls></video>
+<video class="tagwach_video" src="assets/Bruele.mp4" controls></video>
 </div>
-    <h6 class="child7">Kapellplatz, SchmuDO 5:00 Uhr</h6>
+    
 
 <video class="tagwach_video" src=""></video>
 
@@ -144,6 +144,7 @@
     }
 .child7 { 
     grid-area: 5 / 2 / 8 / 6; 
+    color: white;
     margin:0;
     padding:0;}
 
