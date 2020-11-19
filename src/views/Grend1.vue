@@ -1,15 +1,13 @@
-<template class="">
+<template class=""> <div class="grend1 ">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="stylesheet" href="reset.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <div class="grend1 ">
 
    <section class="fritschi parent">
 
     <p class="child1"><span class="blue">DU</span> hast <span class="blue">Bruder Fritschi</span> gewählt</p>
     <img src="../assets/BruderFritschi.svg" class="child2" >
     <h4 class="child3 blue">Bru<br>der <br>Frit<br>schi</h4>
-
 
    <span class="child4">
     <h5>Gute Wahl</h5>
@@ -26,13 +24,10 @@
 </div>
     <h6 class="child7">Kapellplatz, SchmuDO 5 Uhr</h6>
 
-
-
 <p class="child7">brüele</p>
 <p class="child7">Urknall</p>
 
 <video src="assets/Foetzeliraege.mp4" class="child8 m-vid"></video>
-
 
 <p class="child12">1-0-0- t-a-u-s-e-n-d-e- P-a-p-i-e-r- s-c-h-n-i-t-z-e-l z-e-r-s-c-h-n-i-t-t-e-n-e T-e-l-e-f-o-n-b-ü-c-h-e-r-n- r-e-g-n-e-t-e-s-a-n-d-e-r-T-a-g-w-a-c-h-e-a-u-f-d-e-n-K-a-p-e-l-l-p-l-a-t-z-h-i-n-u-n-t-e-r-.
 </p>

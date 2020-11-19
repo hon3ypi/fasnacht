@@ -34,7 +34,7 @@ export default {
         this.ort[0].fields.location.lon,
         this.ort[0].fields.location.lat,
       ],
-      zoom: 17,
+      zoom: 16,
     });
 
     map.on("load", async function () {

@@ -1,5 +1,7 @@
 <template class="">
-<div class="home boxen">
+<div class="boxen">
+  <h1>Home</h1>
+
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="reset.css">
     <div class="box1"></div>
@@ -29,7 +31,6 @@ html{
 }
 
 .boxen { 
-border: solid 1px red;
 display: grid; 
 grid-template-columns: repeat(12, 1fr); 
 grid-template-rows: repeat(12, 1fr); 
@@ -86,10 +87,10 @@ background-color: #ed5250;
   background-color: #4CC9F0;
 } 
 .titel { 
-  font-size: 100px;
+  font-size: 130px; /* man kann font size nicht ändern */
   color: white;
-grid-area: 4/5/7/9;
-text-align: center;
+  grid-area: 4/5/7/9;
+  text-align: center;
 
   } 
 </style>

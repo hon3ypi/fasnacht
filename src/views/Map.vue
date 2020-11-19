@@ -14,7 +14,6 @@ export default {
       ort: [],
     };
   },
-  created: async function () {},
   mounted: async function () {
     let result = await contentfulClient.getEntries({
       content_type: "standort",
@@ -31,6 +30,7 @@ export default {
       zoom: 16,
     });
     map.on("load", async function () {
+      
       let result = await contentfulClient
       .getEntries({
         content_type: "standort"
@@ -58,6 +58,7 @@ export default {
                   },
                   properties: {
                     title: coordinates[1].fields.ortsname,
+                    description: "saletti",
                   },
                 },
                 {
@@ -69,6 +70,7 @@ export default {
                   },
                   properties: {
                     title: coordinates[2].fields.ortsname,
+                    description: "rüüüüüüdig",
                 },
                 },
                 {
@@ -80,6 +82,7 @@ export default {
                   },
                   properties: {
                     title: coordinates[3].fields.ortsname,
+                    description: "holdriooooo",
                   },
                 },
               ],
@@ -101,6 +104,37 @@ export default {
           });
         }
       );
+
+            /***********************************************************************************/
+      map.on("click", "points", function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        console.log("en String");
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] +=
+            e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+
+      // Change the cursor to a pointer when the mouse is over the places layer.
+      map.on("mouseenter", "points", function () {
+        map.getCanvas().style.cursor = "pointer";
+      });
+
+      // Change it back to a pointer when it leaves.
+      map.on("mouseleave", "points", function () {
+        map.getCanvas().style.cursor = "";
+      });
+   
     });
   },
 };
