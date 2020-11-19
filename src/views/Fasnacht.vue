@@ -5,6 +5,11 @@
       {{element.fields.ortsname}}
       {{element.fields.location}}
     </div>
+
+    <div v-for="grend in orte" :key="grend.grendname">
+      {{grend.fields.grendname}}
+      {{grend.fields.grendmedia.fields.file.url}}
+    </div>
   </div>
 </template>
 
@@ -26,6 +31,13 @@ export default {
       });
     console.log(result);
     this.orte = result.items;
+
+    let resultgrend = await contentfulClient
+      .getEntries({
+        content_type: "grende"
+      });
+    console.log(resultgrend);
+    this.orte = resultgrend.items;
   }
 };
 </script>

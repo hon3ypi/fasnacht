@@ -14,7 +14,6 @@ export default {
       ort: [],
     };
   },
-  created: async function () {},
   mounted: async function () {
     let result = await contentfulClient.getEntries({
       content_type: "standort",
