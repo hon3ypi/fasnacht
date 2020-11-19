@@ -41,6 +41,7 @@
             <video src="" class="m-vid"></video>
             <video src="" class="s-vid"></video>
     </section>  
+    </section>
    </div>
 </template>
 
