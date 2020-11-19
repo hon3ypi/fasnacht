@@ -10,7 +10,6 @@ import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
 import fritschi from '../assets/fritschimarker.png';
 import grend from '../assets/grendmarker.png';
-import huereaff from '../assets/huereaffmarker.png';
 
 //Stuff woni noni wörkli chegge
 export default {
@@ -82,38 +81,6 @@ export default {
           "line-width": 8,
         },
       });
-
-      /*********************************************************** */
-
-      map.addSource("rathausjesuiten", {
-        type: "geojson",
-        data: {
-          type: "Feature",
-          geometry: {
-            type: "LineString",
-            coordinates: [
-              [8.30591, 47.051748],
-              [8.306173, 47.050865],
-              [8.305379, 47.050838],
-              [8.304574, 47.050684],
-            ],
-          },
-        },
-      });
-      map.addLayer({
-        id: "rathausjesuiten",
-        type: "line",
-        source: "rathausjesuiten",
-        layout: {
-          "line-join": "round",
-          "line-cap": "round",
-        },
-        paint: {
-          "line-color": "#F8BD4F",
-          "line-width": 8,
-        },
-      });
-
 
       /*****************************************************/
       let resultfritschi = await contentfulClient
@@ -202,44 +169,7 @@ export default {
           });
         },
       );
-      /* JESUITENPLATZ ************************************************************/
-      map.loadImage(
-        huereaff,
-        function (error, image) {
-          if (error) throw error;
-          map.addImage("huereaff", image);
-          
-          //Point in Map
-          map.addSource("point3", {
-            type: "geojson",
-            data: {
-                  //Jesuitenplatz
-                  type: "Feature",
-                  geometry: {
-                    type: "Point",
-                    coordinates: [coordinates[2].fields.location.lon, coordinates[2].fields.location.lat],
-                  },
-                  properties: {
-                    title: coordinates[2].fields.ortsname,
-                  },
-                },
-          });
-          // Add a symbol layer
-          map.addLayer({
-            id: "point3",
-            type: "symbol",
-            source: "point3",
-            layout: {
-              "icon-image": "huereaff",
-              // get the title name from the source's "title" property
-              "text-field": ["get", "title"],
-              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-              "text-offset": [0, 1.25],
-              "text-anchor": "top",
-            },
-          });
-        },
-      );
+
     });
   },
 };
@@ -247,19 +177,11 @@ export default {
 
 -->CSS
 <style>
-@import url("https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css");
 .map {
   float: left;
-  height: 50%;
+  height: 100%;
   width: 100%;
   position: fixed;
   left: 0;
-}
-
-.test {
-  height: 50%;
-  width: 100%;
-  position: absolute;
-  top: 500px;
 }
 </style>
