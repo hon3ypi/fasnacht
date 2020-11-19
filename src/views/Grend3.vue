@@ -1,6 +1,6 @@
 <template>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="reset.css">
   <div class="grend3">
     <h1>Huereaff</h1>
     <section class="huerenaff">

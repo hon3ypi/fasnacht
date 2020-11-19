@@ -1,7 +1,7 @@
 <template class="">
-<div>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 <div class="home boxen">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="reset.css">
     <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
@@ -17,12 +17,6 @@
     <div class="box12"></div>
     <p class="titel">Luzerner Fasnacht</p>
   </div>
-<<<<<<< HEAD
-    
-  </div>
-=======
-
->>>>>>> 83b8336d22e2eeb9b5b6ae83da7160b0fb13640b
 
 </template>
 
@@ -89,6 +83,7 @@ background-color: #ed5250;
   grid-area: 4 / 5 / 7 / 9; 
   font-size: 73px;
   color: white;
+  
   } 
 </style>
 

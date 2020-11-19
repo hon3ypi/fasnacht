@@ -1,6 +1,6 @@
 <template>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="reset.css">
   <div class="grend2">
     <h1>Grend 2</h1>
 
