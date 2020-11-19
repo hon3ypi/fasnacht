@@ -6,7 +6,7 @@
 
  <section class="grend">
      <section class="vid-wrapper">
-            <video class="xl-vid" src="assets/Rathaustreppen"></video>
+            <video class="xl-vid" src="assets/Rathaustreppen.mp4"></video>
         <p class="dialog">Dä, wo do verbi gloffe esch!</p>
         <img class="" src="">
         <p class="dialog">Do nomol!</p>
