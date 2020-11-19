@@ -51,21 +51,28 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-  .child1 { grid-area: 2 / 2 / 3 / 6; }
+  .child1 { grid-area: 2 / 2 / 3 / 6; 
+  border:solid 1px blue;}
 
   .child2{    grid-area: 2 / 6 / 8 / 11;
   width:100%;
   height:auto;
+  border:solid 1px blue;
 }
-.child3 { grid-area: 2 / 9 / 7 / 13; }
-.child4 { grid-area: 7 / 2 / 13 / 7; }
+.child3 { grid-area: 2 / 9 / 7 / 13;
+border:solid 1px blue;
+font-size: 5em;
+    text-transform: capitalize;}
+.child4 { grid-area: 7 / 2 / 13 / 7; 
+border:solid 1px blue;}
 
 
-    h1{}
-    h4{}
-    h5{}
-    h6{}
-    p{}
+    h4{text-align: left;
+    
+    }
+    h5{text-align: left;}
+    h6{text-align: left;}
+    p{text-align: left;}
     img{}
     
     
