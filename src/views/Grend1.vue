@@ -1,5 +1,6 @@
 <template class="">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="reset.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <div class="grend1 ">
 
@@ -19,7 +20,7 @@
 
 <section class="tagwach parent2">
 
-<h4 class="yellow  child5">tagwach</h4>
+<h4 class="yellow child5">tagwach</h4>
 <div class="wrapper-video yellowbg child6">
 <video src="" class="xl-vid"></video>
 </div>
@@ -27,15 +28,13 @@
 
 
 
-<p class="free">brüele</p>
-<p class="free">Urknall</p>
+<p class="child7">brüele</p>
+<p class="child7">Urknall</p>
 
-<video src="" class="m-vid"></video>
-<video src="" class="s-vid"></video>
-<video src="" class="s-vid"></video>
-<video src="" class="s-vid"></video>
+<video src="child8" class="m-vid"></video>
 
-<p class="">1-0-0- t-a-u-s-e-n-d-e- P-a-p-i-e-r- s-c-h-n-i-t-z-e-l z-e-r-s-c-h-n-i-t-t-e-n-e T-e-l-e-f-o-n-b-ü-c-h-e-r-n- r-e-g-n-e-t-e-s-a-n-d-e-r-T-a-g-w-a-c-h-e-a-u-f-d-e-n-K-a-p-e-l-l-p-l-a-t-z-h-i-n-u-n-t-e-r-.
+
+<p class="child12">1-0-0- t-a-u-s-e-n-d-e- P-a-p-i-e-r- s-c-h-n-i-t-z-e-l z-e-r-s-c-h-n-i-t-t-e-n-e T-e-l-e-f-o-n-b-ü-c-h-e-r-n- r-e-g-n-e-t-e-s-a-n-d-e-r-T-a-g-w-a-c-h-e-a-u-f-d-e-n-K-a-p-e-l-l-p-l-a-t-z-h-i-n-u-n-t-e-r-.
 </p>
 <img class ="" src="">
 
@@ -48,7 +47,8 @@
 /*color*/
 .blue{color:#4CC9F0;}
 .yellow{color: #F8BD4F;}
-.yellowbg{background-color: #F8BD4F;}
+.yellowbg{background-color: #F8BD4F;
+height:56.2275vw;}
 .red{color:#ED5250;}
 .green{color:#86DDB4;}
 .purple{color:#701ABF;}
@@ -75,11 +75,12 @@
     font-size:2em;
     font-weight: 900;
     text-align: start;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
     margin-top:5%;}
     h6{text-align: left;
-    padding-top:3%;
-    padding-left:3%;}
+    padding-top:5%;
+    padding-left:3%;
+    font-size:1em;}
     p{text-align: left;
     margin-top:1%;
     font-size: 1.2em;
@@ -95,19 +96,23 @@
     grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    overflow: hidden;
     }
   .child1 { grid-area: 2 / 2 / 3 / 6; 
   border:solid 1px blue;
+  font-size:2em;
   }
 
-  .child2{    grid-area: 2 / 6 / 8 / 11;
+  .child2{    grid-area: 2 / 6 / 12 / 11;
   width:100%;
   height:auto;
   border:solid 1px blue;
+  
 }
 .child3 { grid-area: 2 / 9 / 7 / 13;
 border:solid 1px blue;
     margin-top:4.15vw;
+    font-size: 7em;
 
 
     }
@@ -123,7 +128,7 @@ border:solid 1px blue;
     width:100vw;
     height:auto;
     grid-template-columns: repeat(12, 8.33vw);
-    grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
+    grid-template-rows: repeat(30, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -138,11 +143,12 @@ align-self: flex-end;}
 margin:0;
 padding:0;}
 
-.child8{.div8 { grid-area: 14 / 3 / 20 / 11; }
+.child12{ grid-area: 20 / 3 / 25 / 11;
+font-size:3.5em; }
 
-}
+
    
-    img{}
+    img{overflow:hidden;}
     
     
 
