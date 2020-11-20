@@ -264,6 +264,7 @@ height:auto;}
 
 .footer{
     color: #86ddb4;
+    font-size:1vw;
 }
 </style>
 
