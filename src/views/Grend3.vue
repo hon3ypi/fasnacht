@@ -148,6 +148,7 @@
       <p class="names">Michelle </p>
       <p class="names">Helena </p>
     </div>
+  <div class="footer" href=""> Zurück zur Karte</div>
 
 </div>
 </template>
@@ -299,7 +300,8 @@
 }
 .names{
   text-align:center;
-  font-weight:600}
+  font-weight:600;
+  }
 
 
   /*Horizontal scroll*/
@@ -407,6 +409,14 @@
   height:auto;
   margin-top:8%;
   border: 1px solid black;}
+
+  .footer{height:10%;
+  text-align:center;
+        padding-top:8%;
+color:#86DDB4;
+      padding-bottom:8%;
+
+  }
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT
@@ -428,7 +438,7 @@
           trigger: ".side-scrolling-wrapper",
           pin: true,
           start: "top +=10px",
-          markers: true,
+          markers: false,
           scrub: 1,
           snap: {
             snapTo: 1 / (sections.length - 1),

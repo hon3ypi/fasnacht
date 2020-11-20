@@ -145,7 +145,6 @@ export default {
           source: "point1",
           layout: {
             "icon-image": "fritschi",
-            // get the title name from the source's "title" property
             "text-field": ["get", "title"],
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 1.25],
