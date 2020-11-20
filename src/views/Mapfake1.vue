@@ -8,9 +8,6 @@
 //Import
 import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
-import fritschi from "../assets/fritschimarker.png";
-import grend from "../assets/grendmarkersw.png";
-import huereaff from "../assets/huereaffmarkersw.png";
 
 //Stuff woni noni wörkli chegge
 export default {
@@ -41,12 +38,16 @@ export default {
 
     /******************************************************/
     map.on("load", async function () {
+      /*KOORDINATEN*/
       let result = await contentfulClient.getEntries({
         content_type: "standort",
       });
-      //console.log(result.item);
       let coordinates = result.items;
-
+      /*GRENDE*/
+      let grenderesult = await contentfulClient.getEntries({
+        content_type: "grende",
+      });
+      let grende = grenderesult.items;
       /*******************************************************/
       map.addSource("fritschibrunnenrathaus", {
         type: "geojson",
@@ -113,7 +114,7 @@ export default {
 
 
       /* FRITSCHIBURNNEN ************************************************************/
-      map.loadImage(fritschi, function (error, image) {
+      map.loadImage(grende[2].fields.grendmedia.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("fritschi", image);
 
@@ -158,7 +159,7 @@ export default {
         });
       });
       /* RATHAUSTREPPE ************************************************************/
-      map.loadImage(grend, function (error, image) {
+      map.loadImage(grende[1].fields.grendmediasw.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("grend", image);
 
@@ -203,7 +204,7 @@ export default {
         });
       });
       /* JESUITENPLATZ ************************************************************/
-      map.loadImage(huereaff, function (error, image) {
+      map.loadImage(grende[0].fields.grendmediasw.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("huereaff", image);
 

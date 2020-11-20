@@ -11,7 +11,7 @@
 //Import
 import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
-import fritschi from "../assets/fritschimarker.png";
+//import fritschi from "../assets/fritschimarker.png";
 import grend from "../assets/grendmarker.png";
 import huereaff from "../assets/huereaffmarker.png";
 
@@ -115,18 +115,14 @@ export default {
       });
 
       /*****************************************************/
-      let resultfritschi = await contentfulClient.getEntries({
+      let grenderesult = await contentfulClient.getEntries({
         content_type: "grende",
       });
-
-      console.log(resultfritschi.item);
-      //let fritschi = resultfritschi.items;
+      let grende = grenderesult.items;
       /* FRITSCHIBURNNEN ************************************************************/
       map.loadImage(
-        //fritschi.fields.grendmedia.fields.file.url,
-        //"images.ctfassets.net/857folb0vp61/syTDePTB1SToGmTNhXyqI/3249e80243bdce19b4326cf8cd08ac0e/fritschimarker.png",
-        //"@/assets/fritschimarker.png",
-        fritschi,
+        grende[2].fields.grendmedia.fields.file.url,
+        
         function (error, image) {
           if (error) throw error;
           map.addImage("fritschi", image);
