@@ -140,15 +140,18 @@
       <p class="names">Helena </p>
     </div>
 
-  <div class="footer" href=""> Zurück zur Karte</div>
+  <div class="footer" href="../#/schloss"> Zurück zur Karte</div>
 
-  <h1><a href="../#/schloss"> KARTE </a></h1> 
 </div>
 </template>
 
 -->DAS ESCH FÖR S CSS
 <style>
-.huerenaff {
+.huerenaff { position:absolute;
+left:40%;
+top:-8%;
+opacity: 0.8;;
+z-index:-1000;
   width: 50%;
   display: block;
   margin-left: auto;
