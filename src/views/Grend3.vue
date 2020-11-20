@@ -115,59 +115,28 @@
 <div class="spacer2">
  <p class="dialog3_001"> «ech ha a mönze zwätschge dänkt! Oder doch en Häxetee. Ehm, Häxetee esch das met vodka oder?, ech möcht äbe scho vodka. »</p>
  <p class="dialog3_002"> «jää, üse häxetee esch aber leider ned met vodka, mer hends do eifach nor met träsch.»</p>
+ 
+ </div>
 
-    <div class="wrap-it">
-      <p class="dialog">“Gärn es Tee,eins mit Schnaps, ich bin ja nicht krank.”</p>
-      <img src="" class="">
-    </div>
-
-    <div class="wrap-it">
-      <p class="dialog">""</p>
-      <img src="" class="">
-    </div>
-
-    <div class="wrap-it">
-      <p class="dialog">“Mis Holdrio esch Schletzfertig!”</p>
-      <img src="" class="">
-    </div>
-
-    <div class="wrap-it">
-      <p class="dialog">“Mis Holdrio esch fasch fertig!”</p>
-      <img src="" class="">
-    </div>
-    <div class="wrap-it">
-      <p class="dialog">“”</p>
-      <img src="" class="">
-    </div>
-    <div class="wrap-it">
-      <p class="dialog">“Mis Holdrio esch trochulär!”</p>
-      <img src="" class="">
-    </div>
-    <video class="m-vid" src=""></video>
-    <video class="m-vid" src=""></video>
-
-</div>
-    <div class="wrapper-video">
-
-      <video class="xl-vid" src=""></video>
-      <div class="drinkscore">
-        <img src="" class="">
-        <img src="" class="">
-        <img src="" class="">
-
-        <img src="" class="">
-        <img src="" class="">
-        <img src="" class="">
-
-        <img src="" class="">
-        <img src="" class="">
-        <img src="" class="">
+  <div>
+    <video class="m-vid" src="/assets/jesuitenkirche.mp4"></video>
       </div>
-    </div>
 
+    <img src="/assets/huerenaff_besoffen.svg" alt="">
+    <div>
+    <video class="" src="/assets/besofen_1"></video>
+</div>
+
+    <div>
     <video class="s-vid" src=""></video>
+</div>
+    <div>
     <video class="s-vid" src=""></video>
+</div>
+</div>
+    <div>
     <video class="m-vid" src=""></video>
+</div>
 
     <p class="">ende </p>
     <span class="names">
@@ -177,7 +146,6 @@
     </span>
 
     -->
-  </div>
 </template>
 
 -->DAS ESCH FÖR S CSS
@@ -214,7 +182,6 @@
   .parent1 {
 
     display: grid;
-    border: 1px solid red;
     font-size:4.4vw;
     text-align: left;
     text-transform:uppercase;
@@ -230,11 +197,10 @@
 
 
 
-  .kid1 {
-     text-transform: uppercase;
+  .kid1 {    grid-area: 2 / 2 / 4 / 9;
+    text-transform: uppercase;
     font-weight: 800;
     font-size: 4.4vw;
-    grid-area: 2 / 2 / 4 / 9;
     text-align: left;;
     
 
@@ -261,7 +227,6 @@ font-weight:800;
 .parent2 {
 position:relative;
     display: grid;
-    border: 1px solid red;
     width: 100vw;
     height: auto;
     font-size:4.4vw;
@@ -275,7 +240,6 @@ position:relative;
 
   .kid5 {
     grid-area: 2 / 2 / 4 / 9;
-    border: solid 1px red;
     font-weight:800;
 
   }

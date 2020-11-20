@@ -46,7 +46,7 @@
             <img class="fritschi_bild_2" src="../assets/fritschi_2.jpg">
             <img class="fritschi_bild_3" src="../assets/fritschi_3.jpg">
         </div>
-        <div class="footer">zurück zur Karte</div>
+        <div class="footer" href="p">zurück zur Karte</div>
     </div>
 </template>
 
@@ -214,6 +214,7 @@
     .child12 {
         grid-area: 20 / 3 / 45 / 11;
         font-size: 15.5vw;
+        text-transform: capitalize;
     }
 
     img {
