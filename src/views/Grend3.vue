@@ -149,6 +149,7 @@
     </div>
   <div class="footer" href=""> Zurück zur Karte</div>
 
+  <h1><a href="../#/schloss"> KARTE </a></h1> 
 </div>
 </template>
 
