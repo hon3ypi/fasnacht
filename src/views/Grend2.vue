@@ -38,11 +38,11 @@
       
             <h4>Guugge </h4>
             <p>Rathaustreppe</p>
-            <p class="">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
             <video class="grend_gugge" controls><source src="../assets/Rathaustreppen.mp4"></video>
-            
             <img class="gugge_1" src="../assets/grend_gugge_1.jpg">
             <img class="gugge_2" src="../assets/grend_gugge_2.jpg">
+            <p class="treppen_text">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
+            
     </section>  
     </section>
    </div>
@@ -123,14 +123,21 @@ color: black;
 .gugge_1 {
     width: 25%;
     height: 25%;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 10%;
 }
 .gugge_2 {
     width: 50%;
     height: 50%;
-    margin-top: 0%;
+    margin-top: -5%;
     margin-left: 40%;
+}
+.treppen_text {
+    text-align: left;
+    margin-top: -20%;
+    margin-left: 10%;
+    font-size: 60%;
+    font-weight: 600;
 }
 </style>
 
