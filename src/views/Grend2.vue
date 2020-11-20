@@ -46,7 +46,7 @@
     </section>  
     </section>
 
-    <a class="footer" href="../#/jesuitenkarte">Wiiter uf de Chart</a>
+    <a class="footer" href="../#/jesuitenkarte">Wiiter uf de Charte</a>
    </div>
 </template>
 
@@ -72,6 +72,7 @@
 
 .html{
   font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
 }
  /*
 .parent {
@@ -89,6 +90,7 @@
 font-size: 60px;
 text-align: center;
 color: black;
+text-transform: uppercase;
     }
 .nono-words {
 font-size: 100px;
