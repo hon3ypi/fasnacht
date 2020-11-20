@@ -53,6 +53,8 @@
       <img class="fritschi_bild_2" src="../assets/fritschi_2.jpg" />
       <img class="fritschi_bild_3" src="../assets/fritschi_3.jpg" />
     </div>
+
+    <h1><a href="../#/rathauskarte"> WEITER </a></h1>
   </div>
 </template>
 
