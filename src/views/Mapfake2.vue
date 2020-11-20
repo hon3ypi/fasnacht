@@ -48,7 +48,8 @@ export default {
         content_type: "grende",
       });
       let grende = grenderesult.items;
-      /*******************************************************/
+       /***ROUTEN************************************************************/
+      /*ROUTE FRITSCHIBRUNNEN->RATHAUSTREPPE*/
       map.addSource("fritschibrunnenrathaus", {
         type: "geojson",
         data: {
@@ -76,13 +77,11 @@ export default {
           "line-cap": "round",
         },
         paint: {
-          "line-color": "#ED5250",
+          "line-color": "grey",
           "line-width": 8,
         },
       });
-
-      /*********************************************************** */
-
+      /*ROUTE RATHAUSTREPPE->JESUITENPLATZ*/
       map.addSource("rathausjesuiten", {
         type: "geojson",
         data: {
@@ -111,7 +110,9 @@ export default {
           "line-width": 8,
         },
       });
-      /* FRITSCHIBURNNEN ************************************************************/
+
+      /***STANDORTE************************************************************/
+      /*FRITSCHIBRUNNEN*/
       map.loadImage(grende[2].fields.grendmedia.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("fritschi", image);
@@ -156,7 +157,7 @@ export default {
           },
         });
       });
-      /* RATHAUSTREPPE ************************************************************/
+     /*RATHAUSTREPPE*/
       map.loadImage(grende[0].fields.grendmedia.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("grend", image);
@@ -201,7 +202,7 @@ export default {
           },
         });
       });
-      /* JESUITENPLATZ ************************************************************/
+      /*JESUITENPLATZ*/
       map.loadImage(grende[1].fields.grendmediasw.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("huereaff", image);
