@@ -6,7 +6,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
       rel="stylesheet"/>
     <section class="fritschi parent">
-      <p class="child1">
+      <p class="child5">
         <span class="blue">DU</span> hast
         <span class="blue">Bruder Fritschi</span> gewählt
       </p>
@@ -55,8 +55,6 @@
       <img class="fritschi_bild_2" src="../assets/fritschi_2.jpg" />
       <img class="fritschi_bild_3" src="../assets/fritschi_3.jpg" />
     </div>
-
-    <a class="footer" href="../#/rathauskarte"> Zurück zur Karte</a>
   </div>
 </template>
 
@@ -65,13 +63,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 @import url("reset.css");
 
-.footer {
-  height: 10%;
-  text-align: center;
-  padding-top: 8%;
-  color: #86ddb4;
-  padding-bottom: 8%;
-}
 /*color*/
 .blue {
   color: #4cc9f0;
@@ -150,6 +141,7 @@ p {
   grid-row-gap: 0px;
   overflow: hidden;
 }
+
 .child5 {
   grid-area: 2 / 2 / 4 / 6;
   margin-top: 0;
