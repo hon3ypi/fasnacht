@@ -6,12 +6,12 @@
   <div class="dialogwrapper parent">
 
 
-    <p class="dialog kid1">Hey Huerenaff <br> Wie gohts?</p>
+    <p class="kid1">Hey Huerenaff <br> Wie gohts?</p>
 
-    <p class="dialog kid2">Danke guet ond der Huerenaff?</p>
-    <p class="kid3 dialog">Los Mou Huerenaff. Gömmer es Kafi Huerenaff
+    <p class="kid2">Danke guet ond der Huerenaff?</p>
+    <p class="kid3  ">Los Mou Huerenaff. Gömmer es Kafi Huerenaff
       go näh?</p>
-    <p class="dialog kid4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
+    <p class=" kid4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
   </div>
 
   <div id="getraenke_holen.mp4" class="xl_vid ">
@@ -20,11 +20,11 @@
 <div class="parent2">
   <p class= " kid5 dialog ">«Gärn en Tee.»</p>
 
-    <p class="dialog kid6">«Nor wenn du Gönnerin wersch!»</p>
-    <p class="dialog kid7">«Onbedengt.»</p>
-    <p class="dialog kid8">«Super, Ond was fÖr en Tee döffs sii – met oder ohni Schuss?» </p>
-    <p class="dialog kid9">«Met Schuss dänk, s esch d Fasnacht!» </p>
-    <p class="dialog kid10">«Das freut mech – was för eine denn?» </p>
+    <p class=" kid6">«Nor wenn du Gönnerin wersch!»</p>
+    <p class=" kid7">«Onbedengt.»</p>
+    <p class=" kid8">«Super, Ond was fÖr en Tee döffs sii – met oder ohni Schuss?» </p>
+    <p class=" kid9">«Met Schuss dänk, s esch d Fasnacht!» </p>
+    <p class=" kid10">«Das freut mech – was för eine denn?» </p>
 
 </div>
 
@@ -213,6 +213,9 @@
   .p{
     color:black;
     background-color:none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4.4vw;
   }
 
   .parent {
@@ -229,17 +232,16 @@
   
 .drink{margin:10px;};
 
-  .dialog {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 4.4em;
-    height: auto;
-
-  }
+ 
 
   .kid1 {
+     text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4.4vw;
     grid-area: 2 / 2 / 4 / 9;
     border: solid 1px red;
+    
+
   }
 
   .kid2 {
@@ -295,7 +297,7 @@ position:relative;
     grid-area: 16 / 2 / 20 / 9;
   }
 
-  .kid10 {
+  .kidb {
     text-align: right;
 
     grid-area: 20 / 5/ 24 / 12;
