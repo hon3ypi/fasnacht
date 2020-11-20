@@ -1,5 +1,5 @@
 <template>
-  <div class="grendtest">
+  <div class="jesuitenkarte">
     <div ref="container" class="map"></div>
   </div>
 </template>
@@ -8,9 +8,6 @@
 //Import
 import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
-import fritschi from "../assets/fritschimarker.png";
-import grend from "../assets/grendmarker.png";
-import huereaff from "../assets/huereaffmarker.png";
 
 //Stuff woni noni wörkli chegge
 export default {
@@ -41,12 +38,16 @@ export default {
 
     /******************************************************/
     map.on("load", async function () {
+      /*KOORDINATEN*/
       let result = await contentfulClient.getEntries({
         content_type: "standort",
       });
-      console.log(result.item);
       let coordinates = result.items;
-
+      /*GRENDE*/
+      let grenderesult = await contentfulClient.getEntries({
+        content_type: "grende",
+      });
+      let grende = grenderesult.items;
       /*******************************************************/
       map.addSource("fritschibrunnenrathaus", {
         type: "geojson",
@@ -75,7 +76,7 @@ export default {
           "line-cap": "round",
         },
         paint: {
-          "line-color": "grey",
+          "line-color": "#ED5250",
           "line-width": 8,
         },
       });
@@ -106,70 +107,58 @@ export default {
           "line-cap": "round",
         },
         paint: {
-          "line-color": "grey",
+          "line-color": "#F8BD4F",
           "line-width": 8,
         },
       });
 
-      /*****************************************************/
-      let resultfritschi = await contentfulClient.getEntries({
-        content_type: "grende",
-      });
-
-      console.log(resultfritschi.item);
-      //let fritschi = resultfritschi.items;
       /* FRITSCHIBURNNEN ************************************************************/
-      map.loadImage(
-        //fritschi.fields.grendmedia.fields.file.url,
-        //"images.ctfassets.net/857folb0vp61/syTDePTB1SToGmTNhXyqI/3249e80243bdce19b4326cf8cd08ac0e/fritschimarker.png",
-        //"@/assets/fritschimarker.png",
-        fritschi,
-        function (error, image) {
-          if (error) throw error;
-          map.addImage("fritschi", image);
+      map.loadImage(grende[2].fields.grendmedia.fields.file.url, function (error, image) {
+        if (error) throw error;
+        map.addImage("fritschi", image);
 
-          //Point in Map
-          map.addSource("point1", {
-            type: "geojson",
-            data: {
-              type: "FeatureCollection",
-              features: [
-                {
-                  //Fritschibrunnen
-                  type: "Feature",
-                  geometry: {
-                    type: "Point",
-                    coordinates: [
-                      coordinates[3].fields.location.lon,
-                      coordinates[3].fields.location.lat,
-                    ],
-                  },
-                  properties: {
-                    title: coordinates[3].fields.ortsname,
-                    description: '<a href="../#/grend1">Ech verzell der öppis dröbert...</a>',
-                  },
+        //Point in Map
+        map.addSource("point1", {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features: [
+              {
+                //Fritschibrunnen
+                type: "Feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: [
+                    coordinates[3].fields.location.lon,
+                    coordinates[3].fields.location.lat,
+                  ],
                 },
-              ],
-            },
-          });
-          // Add a symbol layer
-          map.addLayer({
-            id: "point1",
-            type: "symbol",
-            source: "point1",
-            layout: {
-              "icon-image": "fritschi",
-              // get the title name from the source's "title" property
-              "text-field": ["get", "title"],
-              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-              "text-offset": [0, 1.25],
-              "text-anchor": "top",
-            },
-          });
-        }
-      );
+                properties: {
+                  title: coordinates[3].fields.ortsname,
+                  description:
+                    'ech hoffe, ech gseh di gli mol ade tagwach. bes det hi e rüüdig guetii ziit!',
+                },
+              },
+            ],
+          },
+        });
+        // Add a symbol layer
+        map.addLayer({
+          id: "point1",
+          type: "symbol",
+          source: "point1",
+          layout: {
+            "icon-image": "fritschi",
+            // get the title name from the source's "title" property
+            "text-field": ["get", "title"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 1.25],
+            "text-anchor": "top",
+          },
+        });
+      });
       /* RATHAUSTREPPE ************************************************************/
-      map.loadImage(grend, function (error, image) {
+      map.loadImage(grende[0].fields.grendmedia.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("grend", image);
 
@@ -191,7 +180,8 @@ export default {
                 },
                 properties: {
                   title: coordinates[1].fields.ortsname,
-                  description: '<a href="../#/grend2">Ech verzell der öppis dröbert...</a>',
+                  description:
+                    'hoffentlech seisch du z lozärn nömm larve ond hesch loscht uf meh guggemusig!',
                 },
               },
             ],
@@ -213,7 +203,7 @@ export default {
         });
       });
       /* JESUITENPLATZ ************************************************************/
-      map.loadImage(huereaff, function (error, image) {
+      map.loadImage(grende[1].fields.grendmedia.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("huereaff", image);
 
@@ -235,7 +225,8 @@ export default {
                 },
                 properties: {
                   title: coordinates[2].fields.ortsname,
-                  description: '<a href="../#/grend3">Ech verzell der öppis dröbert...</a>',
+                  description:
+                    'esch hoffe du chonsch weder verbi ufnes holdrio met üs!',
                 },
               },
             ],
@@ -343,8 +334,6 @@ export default {
       map.on("mouseleave", "point1", function () {
         map.getCanvas().style.cursor = "";
       });
-
-      
     });
   },
 };
@@ -353,6 +342,8 @@ export default {
 -->CSS
 <style>
 @import url("https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("reset.css");
 .map {
   float: left;
   height: 50%;
@@ -361,9 +352,14 @@ export default {
   left: 0;
 }
 
+a {
+  color: #ed5250;
+  text-decoration: underline;
+  font-weight: bold;
+}
 .mapboxgl-popup {
   min-width: 200px;
-  max-width: 400px;
+  max-width: 200px;
   font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 </style>
