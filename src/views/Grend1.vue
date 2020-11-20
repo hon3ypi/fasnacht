@@ -51,7 +51,6 @@
     </section>
     
     <a class="footer" href="../#/rathauskarte">Wiiter uf de Charte</a>
-    
     <!--------------------- 3 Bilder am schluss --------------------->
     <div class="fritschi_bilder">
       <img class="fritschi_bild_1" src="../assets/fritschi_1.jpg" />
