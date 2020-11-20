@@ -44,9 +44,10 @@
             <p class="treppen_text">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
             
     </section>  
+        <a class="footer" href="../#/jesuitenkarte">Wiiter uf de Charte</a>
     </section>
 
-    <a class="footer" href="../#/jesuitenkarte">Wiiter uf de Charte</a>
+
    </div>
 </template>
 
