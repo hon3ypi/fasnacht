@@ -4,9 +4,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
+      rel="stylesheet"/>
     <section class="fritschi parent">
       <p class="child1">
         <span class="blue">DU</span> hast
