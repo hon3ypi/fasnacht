@@ -21,13 +21,6 @@
             <p class="nono">Schnitzelbängg!</p>
             <p class="nono">Morgenschtraich!!</p>
         </div>
-
-        <div class="layer">
-            <img class="" src="">
-            <p class="dialog">Dä, wo do verbi gloffe esch!</p>
-            <p class="dialog">Ha grad es Déjà Vue.</p>
-            <p class="dialog">Das esch jo en coole Grend!</p>
-        </div>
         <div class="grid_bilder">
             <img class="grend_1" src="../assets/grend_1.jpg">
             <img class="grend_2" src="../assets/grend_2.jpg">
@@ -36,11 +29,20 @@
             <img class="grend_5" src="../assets/grend_5.jpg">
             <img class="grend_6" src="../assets/grend_6.jpg">
         </div>
+        <div class="layer">
+            <img class="" src="">
+            <p class="dialog">Dä, wo do verbi gloffe esch!</p>
+            <p class="dialog">Ha grad es Déjà Vue.</p>
+            <p class="dialog">Das esch jo en coole Grend!</p>
+        </div>
       
             <h4>Guugge </h4>
             <p>Rathaustreppe</p>
             <p class="">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
+            <video class="grend_gugge" controls><source src="../assets/Rathaustreppen.mp4"></video>
             
+            <img class="gugge_1" src="../assets/grend_gugge_1.jpg">
+            <img class="gugge_2" src="../assets/grend_gugge_2.jpg">
     </section>  
     </section>
    </div>
@@ -114,7 +116,22 @@ color: black;
 .grend_4 {
   grid-area: 2 / 3 / 3 / 4;  
 }
-
+.grend_gugge {
+    width: 100%;
+    height: 100%;
+}
+.gugge_1 {
+    width: 25%;
+    height: 25%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+.gugge_2 {
+    width: 50%;
+    height: 50%;
+    margin-top: 0%;
+    margin-left: 40%;
+}
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT
