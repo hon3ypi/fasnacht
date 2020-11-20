@@ -56,7 +56,7 @@
       <img class="fritschi_bild_3" src="../assets/fritschi_3.jpg" />
     </div>
 
-    <a class="footer" href="../#/rathauskarte"> Zurück zur Karte</a>
+    <a class="footer" href="../#/rathauskarte">Wiiter uf de Charte</a>
   </div>
 </template>
 
@@ -71,6 +71,7 @@
   padding-top: 8%;
   color: #86ddb4;
   padding-bottom: 8%;
+  font-size: 70px;
 }
 /*color*/
 .blue {
