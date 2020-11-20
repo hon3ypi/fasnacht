@@ -45,11 +45,20 @@
             
     </section>  
     </section>
+
+    <a class="footer" href="../#/jesuitenkarte"> Zurück zur Karte</a>
    </div>
 </template>
 
 -->DAS ESCH FÖR S CSS
 <style>
+.footer {
+  height: 10%;
+  text-align: center;
+  padding-top: 8%;
+  color: #86ddb4;
+  padding-bottom: 8%;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap") ;
 @import url("reset.css");
