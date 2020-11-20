@@ -8,9 +8,6 @@
 //Import
 import mapboxgl from "mapbox-gl";
 import contentfulClient from "@/module/contentful.js";
-import fritschi from "../assets/fritschimarker.png";
-import grend from "../assets/grendmarker.png";
-import huereaff from "../assets/huereaffmarkersw.png";
 
 //Stuff woni noni wörkli chegge
 export default {
@@ -41,13 +38,18 @@ export default {
 
     /******************************************************/
     map.on("load", async function () {
+      /*KOORDINATEN*/
       let result = await contentfulClient.getEntries({
         content_type: "standort",
       });
-      console.log(result.item);
       let coordinates = result.items;
-
-      /*******************************************************/
+      /*GRENDE*/
+      let grenderesult = await contentfulClient.getEntries({
+        content_type: "grende",
+      });
+      let grende = grenderesult.items;
+       /***ROUTEN************************************************************/
+      /*ROUTE FRITSCHIBRUNNEN->RATHAUSTREPPE*/
       map.addSource("fritschibrunnenrathaus", {
         type: "geojson",
         data: {
@@ -75,13 +77,11 @@ export default {
           "line-cap": "round",
         },
         paint: {
-          "line-color": "#ED5250",
+          "line-color": "grey",
           "line-width": 8,
         },
       });
-
-      /*********************************************************** */
-
+      /*ROUTE RATHAUSTREPPE->JESUITENPLATZ*/
       map.addSource("rathausjesuiten", {
         type: "geojson",
         data: {
@@ -110,55 +110,55 @@ export default {
           "line-width": 8,
         },
       });
-      /* FRITSCHIBURNNEN ************************************************************/
-      map.loadImage(
-        fritschi,
-        function (error, image) {
-          if (error) throw error;
-          map.addImage("fritschi", image);
 
-          //Point in Map
-          map.addSource("point1", {
-            type: "geojson",
-            data: {
-              type: "FeatureCollection",
-              features: [
-                {
-                  //Fritschibrunnen
-                  type: "Feature",
-                  geometry: {
-                    type: "Point",
-                    coordinates: [
-                      coordinates[3].fields.location.lon,
-                      coordinates[3].fields.location.lat,
-                    ],
-                  },
-                  properties: {
-                    title: coordinates[3].fields.ortsname,
-                    description: 'wotsch scho weder <a href="../#/grend1">zrogg</a> ?',
-                  },
+      /***STANDORTE************************************************************/
+      /*FRITSCHIBRUNNEN*/
+      map.loadImage(grende[2].fields.grendmedia.fields.file.url, function (error, image) {
+        if (error) throw error;
+        map.addImage("fritschi", image);
+
+        //Point in Map
+        map.addSource("point1", {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features: [
+              {
+                //Fritschibrunnen
+                type: "Feature",
+                geometry: {
+                  type: "Point",
+                  coordinates: [
+                    coordinates[3].fields.location.lon,
+                    coordinates[3].fields.location.lat,
+                  ],
                 },
-              ],
-            },
-          });
-          // Add a symbol layer
-          map.addLayer({
-            id: "point1",
-            type: "symbol",
-            source: "point1",
-            layout: {
-              "icon-image": "fritschi",
-              // get the title name from the source's "title" property
-              "text-field": ["get", "title"],
-              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-              "text-offset": [0, 1.25],
-              "text-anchor": "top",
-            },
-          });
-        }
-      );
-      /* RATHAUSTREPPE ************************************************************/
-      map.loadImage(grend, function (error, image) {
+                properties: {
+                  title: coordinates[3].fields.ortsname,
+                  description:
+                    'wotsch scho weder <a href="../#/grend1">zrogg</a> ?',
+                },
+              },
+            ],
+          },
+        });
+        // Add a symbol layer
+        map.addLayer({
+          id: "point1",
+          type: "symbol",
+          source: "point1",
+          layout: {
+            "icon-image": "fritschi",
+            // get the title name from the source's "title" property
+            "text-field": ["get", "title"],
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 1.25],
+            "text-anchor": "top",
+          },
+        });
+      });
+     /*RATHAUSTREPPE*/
+      map.loadImage(grende[0].fields.grendmedia.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("grend", image);
 
@@ -180,7 +180,8 @@ export default {
                 },
                 properties: {
                   title: coordinates[1].fields.ortsname,
-                  description: 'die gugge, wo do speled hend voll die coole <a href="../#/grend2">grende</a>!',
+                  description:
+                    'die gugge, wo do speled hend voll die coole <a href="../#/grend2">grende</a>!',
                 },
               },
             ],
@@ -201,8 +202,8 @@ export default {
           },
         });
       });
-      /* JESUITENPLATZ ************************************************************/
-      map.loadImage(huereaff, function (error, image) {
+      /*JESUITENPLATZ*/
+      map.loadImage(grende[1].fields.grendmediasw.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("huereaff", image);
 
@@ -224,7 +225,8 @@ export default {
                 },
                 properties: {
                   title: coordinates[2].fields.ortsname,
-                  description: 'du besch ez chli fitter för d fasnacht, aber besch du scho rüüdig am fiire? <a href="../#/grend3"></a>',
+                  description:
+                    'du besch ez chli fitter för d fasnacht, aber besch du scho rüüdig am fiire? <a href="../#/grend3"></a>',
                 },
               },
             ],
@@ -332,8 +334,6 @@ export default {
       map.on("mouseleave", "point1", function () {
         map.getCanvas().style.cursor = "";
       });
-
-      
     });
   },
 };
@@ -350,11 +350,10 @@ export default {
   left: 0;
 }
 
-a
-{
-color: #ED5250;
-text-decoration: underline;
-font-weight:bold;
+a {
+  color: #ed5250;
+  text-decoration: underline;
+  font-weight: bold;
 }
 .mapboxgl-popup {
   min-width: 200px;
