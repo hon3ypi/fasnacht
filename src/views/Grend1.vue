@@ -106,7 +106,6 @@
         margin-top: 5%;
 
     }
-
     h6 {
         text-align: left;
         padding-top: 5%;
@@ -115,12 +114,39 @@
         color:white;
     }
 
-    p {
-        text-align: left;
-        margin-top: 1%;
-        font-size: 1.2em;
-        font-weight: 600;
+/* grid*/
+.parent {
+    display: grid;
+    border: 1px solid red;
+    width:100vw;
+    height:auto;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    overflow: hidden;
     }
+.child1 {
+    grid-area: 2 / 2 / 3 / 6; 
+    border:solid 1px blue;
+    font-size:2em;
+  }
+.child2 {    
+    grid-area: 2 / 6 / 12 / 11;
+    width:100%;
+    height:auto;
+    border:solid 1px blue; 
+}
+.child3 { 
+    grid-area: 2 / 9 / 7 / 13;
+    border:solid 1px blue;
+    margin-top:4.15vw;
+    font-size: 7em;
+    }
+.child4 { 
+    grid-area: 7 / 2 / 13 / 5; 
+    border:solid 1px blue;
+}
 
     /* grid*/
     .parent {
@@ -155,6 +181,11 @@
         font-size: 12vw;
         font-weight: 600;
     }
+.child7 { 
+    grid-area: 5 / 2 / 8 / 6; 
+    color: white;
+    margin:0;
+    padding:0;}
 
     .child4 {
         grid-area: 7 / 2 / 13 / 6;
@@ -227,10 +258,9 @@
         width: 100%;
         height: 100%
     }
-
-    .s-vid {
-        width: 100%;
-        height: 100%
+.s-vid {
+    width:100%;
+    height:100%
     }
 
     .wrapper-video {
@@ -249,15 +279,17 @@
 
 -->DAS ESCH FÖR S JAVASCRIPT
 <script>
-    export default {
-        name: "Fritschi",
-        data: function () {
-            return {
-                ort: [],
-            };
-        },
-        mounted: async function () {
+export default {
+  name: "Fritschi",
+  data: function () {
+    return {
+      ort: [],
+    };
+  },
+  mounted: async function () {
 
-        }
-    }
+  }
+}
+
 </script>
+
