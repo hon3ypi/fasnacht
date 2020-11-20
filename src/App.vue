@@ -1,14 +1,15 @@
 <template>
-  <div id="nav">
+  <div >
     <router-link to="/grend1">Grend 1</router-link> |
     <router-link to="/grend2">Grend 2</router-link> |
     <router-link to="/grend3">Grend 3</router-link> |
     <router-link to="/fritschikarte">Afang</router-link> |
     <router-link to="/rathauskarte">Metti</router-link> |
-    <router-link to="/jesuitenkarte">Schloss</router-link> |
+    <router-link to="/jesuitenkarte">Schloss</router-link>
   </div>
   
   <router-view/>
+  
 </template>
 
 <style>

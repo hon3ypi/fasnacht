@@ -136,7 +136,7 @@ export default {
                 properties: {
                   title: coordinates[3].fields.ortsname,
                   description:
-                    'ech hoffe, ech gseh di gli mol ade tagwach. bes det hi e rüüdig guetii ziit!',
+                    'ech hoffe, ech gseh di gli mol ade tagwach. bes det hi e rüüdig guetii ziit! <a href="../#/">no einisch starte</a>',
                 },
               },
             ],
@@ -181,7 +181,7 @@ export default {
                 properties: {
                   title: coordinates[1].fields.ortsname,
                   description:
-                    'hoffentlech seisch du z lozärn nömm larve ond hesch loscht uf meh guggemusig!',
+                    'hoffentlech seisch du z lozärn nömm larve ond hesch loscht uf meh guggemusig! <a href="../#/">no einisch starte</a>',
                 },
               },
             ],
@@ -226,7 +226,7 @@ export default {
                 properties: {
                   title: coordinates[2].fields.ortsname,
                   description:
-                    'esch hoffe du chonsch weder verbi ufnes holdrio met üs!',
+                    'esch hoffe du chonsch weder verbi ufnes holdrio met üs! <a href="../#/">no einisch starte</a>',
                 },
               },
             ],
