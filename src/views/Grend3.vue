@@ -124,17 +124,10 @@
     <div>
       <video class="" src="/assets/besofen_1"></video>
     </div>
-
-    <div>
-      <video class="s-vid" src=""></video>
-    </div>
-    <div>
-      <video class="s-vid" src=""></video>
-    </div>
-
-    <div>
-      <video class="m-vid" src=""></video>
-    </div>
+    <video class="besoffen_1" controls><source src="../assets/besofen_1.mp4"></video>
+    <video class="besoffen_2" controls><source src="../assets/besofen_2.mp4"></video>
+    <video class="besoffen_3" controls><source src="../assets/besofen_3.mp4"></video>
+    <video class="besoffen_4" controls><source src="../assets/besofen_4.mp4"></video>
 
     <p class="ende">Ende</p>
     <div class="names">
@@ -143,7 +136,7 @@
       <p class="names">Helena</p>
     </div>
 
-    <p/><a class="footer" href="../#/karte">Zrogg uf d Charte</a>
+    <p/><a class="footer" href="../#/karte">ZROGG OF D CHARTE</a>
   </div>
 </template>
 
@@ -409,6 +402,30 @@ p {
   color: #86ddb4;
   padding-bottom: 8%;
   font-size: 70px;
+}
+.besoffen_1 {
+  width: 40%;
+  height: auto;
+  margin-top: 20%;
+}
+.besoffen_2 {
+  width: 40%;
+  height: auto;
+  margin-top: 20%;
+  margin-left: 1%;
+}
+
+.besoffen_3 {
+  width: 40%;
+  height: auto;
+  margin-top: 1%;
+  
+}
+.besoffen_4 {
+  width: 40%;
+  height: auto;
+  margin-left: 1%;
+  margin-top: 1%;
 }
 </style>
 

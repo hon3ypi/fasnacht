@@ -49,16 +49,18 @@
         r-e-g-n-e-t-e-s-a-n-d-e-r-T-a-g-w-a-c-h-e-a-u-f-d-e-n-K-a-p-e-l-l-p-l-a-t-z-h-i-n-u-n-t-e-r-.
       </p>
     </section>
+    
+    <a class="footer" href="../#/rathauskarte">WIITER UF DE CHARTE</a>
     <!--------------------- 3 Bilder am schluss --------------------->
     <div class="fritschi_bilder">
       <img class="fritschi_bild_1" src="../assets/fritschi_1.jpg" />
       <img class="fritschi_bild_2" src="../assets/fritschi_2.jpg" />
       <img class="fritschi_bild_3" src="../assets/fritschi_3.jpg" />
-        <a class="footer" href="">zurück zur Karte</a>
-
     </div>
 
-    <a class="footer" href="../#/rathauskarte">Wiiter uf de Charte</a>
+    
+
+   
   </div>
 </template>
 
@@ -143,7 +145,7 @@ p {
 /* grid*/
 .parent {
   display: grid;
-  border: 1px solid red;
+  
   width: 100vw;
   height: auto;
   grid-template-columns: repeat(12, 8.33vw);
@@ -158,6 +160,7 @@ p {
   grid-area: 2 / 2 / 4 / 6;
   margin-top: 0;
   align-self: flex-end;
+  font-size: 50px;
 }
 
 .child2 {
@@ -174,6 +177,7 @@ p {
 
 .child4 {
   grid-area: 7 / 2 / 13 / 5;
+  font-size: 20px;
 }
 
 .parent2 {
@@ -227,7 +231,7 @@ img {
 
 .child12 {
   grid-area: 20 / 3 / 45 / 11;
-  font-size: 15.5vw;
+  font-size: 11vw;
   text-transform: capitalize;
   animation: blinker 3s linear infinite;
 }
