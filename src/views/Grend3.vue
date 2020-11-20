@@ -143,7 +143,13 @@
       <p class="names">Michelle </p>
       <p class="names">Helena </p>
     </div>
+<<<<<<< HEAD
   <div class="footer" href=""> Zurück zur Karte </div>
+=======
+  <div class="footer" href=""> Zurück zur Karte</div>
+
+  <h1><a href="../#/schloss"> KARTE </a></h1> 
+>>>>>>> bf4bc7a9f2e3b9a1a8d2fb7e33dea88cf2c0e90c
 </div>
 </template>
 
