@@ -7,8 +7,10 @@
      <section class="vid-wrapper">
            <!-- <video class="grend_vid" src="assets/Rathaustreppen.mp4"></video> -->
         <p class="dialog">Dä, wo do verbi gloffe esch!</p>
+       
         <img class="" src="">
         <p class="dialog">Do nomol!</p>
+         <br/>
         
     <span class="dialog-wrap dialog"> <span class="">Das esch jo en cooli </span>
         <span class="nono"> Larva!</span></span>
@@ -33,17 +35,24 @@
             <img class="" src="">
             <p class="dialog">Dä, wo do verbi gloffe esch!</p>
             <p class="dialog">Ha grad es Déjà Vue.</p>
+             <br/>
             <p class="dialog">Das esch jo en coole Grend!</p>
+             <br/>
         </div>
       
-            <h4>Guugge </h4>
+            <h4>Guugge</h4>
             <p>Rathaustreppe</p>
             <video class="grend_gugge" controls><source src="../assets/Rathaustreppen.mp4"></video>
             <img class="gugge_1" src="../assets/grend_gugge_1.jpg">
             <img class="gugge_2" src="../assets/grend_gugge_2.jpg">
+             <br/>
+              <br/>
+               <br/>
+                <br/>
             <p class="treppen_text">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
             
     </section>  
+     <br/>
         <a class="footer" href="../#/jesuitenkarte">WIITER UF DE CHARTE</a>
     </section>
 

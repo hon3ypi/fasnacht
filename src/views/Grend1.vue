@@ -160,6 +160,7 @@ p {
   grid-area: 2 / 2 / 4 / 6;
   margin-top: 0;
   align-self: flex-end;
+  font-size: 50px;
 }
 
 .child2 {
@@ -176,6 +177,7 @@ p {
 
 .child4 {
   grid-area: 7 / 2 / 13 / 5;
+  font-size: 20px;
 }
 
 .parent2 {
@@ -229,7 +231,7 @@ img {
 
 .child12 {
   grid-area: 20 / 3 / 45 / 11;
-  font-size: 15.5vw;
+  font-size: 11vw;
   text-transform: capitalize;
   animation: blinker 3s linear infinite;
 }
