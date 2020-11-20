@@ -77,7 +77,7 @@ export default {
           "line-cap": "round",
         },
         paint: {
-          "line-color": "grey",
+          "line-color": "#ED5250",
           "line-width": 8,
         },
       });
@@ -346,7 +346,7 @@ export default {
  @import url("reset.css");
 .map {
   float: left;
-  height: 50%;
+  height: 100%;
   width: 100%;
   position: fixed;
   left: 0;
