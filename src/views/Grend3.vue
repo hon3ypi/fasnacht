@@ -410,6 +410,26 @@ p {
   padding-bottom: 8%;
   font-size: 70px;
 }
+.besoffen_1 {
+  width: 100%;
+  height: auto;
+}
+.besoffen_2 {
+  width: 40%;
+  height: auto;
+}
+.besoffen_2 {
+  width: 40%;
+  height: auto;
+}
+.besoffen_3 {
+  width: 40%;
+  height: auto;
+}
+.besoffen_4 {
+  width: 40%;
+  height: auto;
+}
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT

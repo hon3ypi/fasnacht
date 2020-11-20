@@ -54,6 +54,8 @@
       <img class="fritschi_bild_1" src="../assets/fritschi_1.jpg" />
       <img class="fritschi_bild_2" src="../assets/fritschi_2.jpg" />
       <img class="fritschi_bild_3" src="../assets/fritschi_3.jpg" />
+        <a class="footer" href="">zurück zur Karte</a>
+
     </div>
 
     <a class="footer" href="../#/rathauskarte">Wiiter uf de Charte</a>
@@ -254,6 +256,10 @@ height:auto;}
 .tagwach_video {
   width: 300%;
   height: 300%;
+}
+
+.footer{
+    color: #86ddb4;
 }
 </style>
 
