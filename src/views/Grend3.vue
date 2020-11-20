@@ -149,7 +149,11 @@
 
 -->DAS ESCH FÖR S CSS
 <style>
-.huerenaff {
+.huerenaff { position:absolute;
+left:40%;
+top:-8%;
+opacity: 0.8;;
+z-index:-1000;
   width: 50%;
   display: block;
   margin-left: auto;

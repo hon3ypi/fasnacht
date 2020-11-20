@@ -6,7 +6,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
       rel="stylesheet"/>
     <section class="fritschi parent">
-      <p class="child1">
+      <p class="child5">
         <span class="blue">DU</span> hast
         <span class="blue">Bruder Fritschi</span> gewählt
       </p>
@@ -151,6 +151,7 @@ p {
   grid-row-gap: 0px;
   overflow: hidden;
 }
+
 .child5 {
   grid-area: 2 / 2 / 4 / 6;
   margin-top: 0;
