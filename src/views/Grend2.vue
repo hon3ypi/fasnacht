@@ -44,9 +44,10 @@
             <p class="treppen_text">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
             
     </section>  
+        <a class="footer" href="../#/jesuitenkarte">Wiiter uf de Charte</a>
     </section>
 
-    <a class="footer" href="../#/jesuitenkarte">Wiiter uf de Chart</a>
+
    </div>
 </template>
 
@@ -72,6 +73,7 @@
 
 .html{
   font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
 }
  /*
 .parent {
@@ -89,6 +91,7 @@
 font-size: 60px;
 text-align: center;
 color: black;
+text-transform: uppercase;
     }
 .nono-words {
 font-size: 100px;
