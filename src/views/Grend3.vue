@@ -124,17 +124,10 @@
     <div>
       <video class="" src="/assets/besofen_1"></video>
     </div>
-
-    <div>
-      <video class="s-vid" src=""></video>
-    </div>
-    <div>
-      <video class="s-vid" src=""></video>
-    </div>
-
-    <div>
-      <video class="m-vid" src=""></video>
-    </div>
+    <video class="besoffen_1" controls><source src="../assets/besofen_1.mp4"></video>
+    <video class="besoffen_2" controls><source src="../assets/besofen_2.mp4"></video>
+    <video class="besoffen_3" controls><source src="../assets/besofen_3.mp4"></video>
+    <video class="besoffen_4" controls><source src="../assets/besofen_4.mp4"></video>
 
     <p class="ende">Ende</p>
     <div class="names">
