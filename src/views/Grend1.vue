@@ -22,7 +22,7 @@
 </div>
 <!--------------------- videos gehen nicht --------------------->
 <video class="tagwach_video" controls>
-    <source src="assets/Urknall_Foetzelirege.mp4">
+    <source src="../assets/Urknall_Foetzelirege.mp4">
 </video>
 <p class="child12">1-0-0- t-a-u-s-e-n-d-e- P-a-p-i-e-r- s-c-h-n-i-t-z-e-l z-e-r-s-c-h-n-i-t-t-e-n-e T-e-l-e-f-o-n-b-ü-c-h-e-r-n- r-e-g-n-e-t-e-s-a-n-d-e-r-T-a-g-w-a-c-h-e-a-u-f-d-e-n-K-a-p-e-l-l-p-l-a-t-z-h-i-n-u-n-t-e-r-.
 </p>
@@ -121,18 +121,10 @@
         grid-row-gap: 0px;
         overflow: hidden;
     }
-<<<<<<< HEAD
 .child5 { 
     grid-area: 2 / 2 / 4 / 6; 
     margin-top:0;
     align-self: flex-end;
-=======
-
-    .child1 {
-        grid-area: 2 / 2 / 3 / 6;
-        border: solid 1px blue;
-        font-size: 2em;
->>>>>>> 03f1f539d81013151f276f414efa41de1949c5eb
     }
 
     .child2 {
@@ -166,7 +158,6 @@
         grid-row-gap: 0px;
     }
 
-<<<<<<< HEAD
 .fritschi_bild_1 {
     position: absolute;
     width:20%;
@@ -198,19 +189,6 @@
 .tagwach_video {
     widows: 640px;;
     height:360px;
-=======
-    .child5 {
-        grid-area: 2 / 2 / 4 / 6;
-        margin-top: 0;
-        align-self: flex-end;
-    }
-
-    .child6 {
-        margin: 0;
-        padding: 0;
-        grid-area: 6 / 1 / 13 / 13;
-        min-height: 56vw;
->>>>>>> 03f1f539d81013151f276f414efa41de1949c5eb
     }
 
     .child7 {
