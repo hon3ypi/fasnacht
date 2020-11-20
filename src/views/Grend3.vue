@@ -136,7 +136,7 @@
       <p class="names">Helena</p>
     </div>
 
-    <p/><a class="footer" href="../#/karte">Zrogg uf d Charte</a>
+    <p/><a class="footer" href="../#/karte">ZROGG OF D CHARTE</a>
   </div>
 </template>
 
