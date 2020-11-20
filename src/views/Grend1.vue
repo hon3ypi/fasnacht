@@ -130,6 +130,7 @@
     grid-area: 2 / 2 / 3 / 6; 
     border:solid 1px blue;
     font-size:2em;
+    text-align:left;
   }
 .child2 {    
     grid-area: 2 / 6 / 12 / 11;
@@ -146,6 +147,7 @@
 .child4 { 
     grid-area: 7 / 2 / 13 / 5; 
     border:solid 1px blue;
+    text-align:left;
 }
 
     /* grid*/
