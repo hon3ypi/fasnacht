@@ -118,7 +118,7 @@
       <p class="dialog3_002"> «jää, üse häxetee esch aber leider ned met vodka, mer hends do eifach nor met träsch.»</p>
 
       <div>
-        <video class="" src="/assets/Schletzfertig.mp4"></video>
+        <video class="schletzfertig" src="/assets/Schletzfertig.mp4"></video>
       </div>
     </div>
 
@@ -211,10 +211,7 @@
     font-weight: 800;
     font-size: 4.4vw;
     text-align: left;
-    ;
-
-
-  }
+    }
 
   .kid2 {
     text-align: right;
@@ -405,6 +402,11 @@
     padding-top: 8%;
     padding-left: 12%;
   }
+
+  .schletzfertig{width:100vw;
+  height:auto;
+  margin-top:8%;
+  border: 1px solid black;}
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT
