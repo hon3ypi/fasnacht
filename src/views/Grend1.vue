@@ -114,41 +114,7 @@
         color:white;
     }
 
-/* grid*/
-.parent {
-    display: grid;
-    border: 1px solid red;
-    width:100vw;
-    height:auto;
-    grid-template-columns: repeat(12, 8.33vw);
-    grid-template-rows: repeat(5, 8.33vw);     /*just for onepage ... how we do over multiple pages? just add more rows */
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    overflow: hidden;
-    }
-.child1 {
-    grid-area: 2 / 2 / 3 / 6; 
-    border:solid 1px blue;
-    font-size:2em;
-    text-align:left;
-  }
-.child2 {    
-    grid-area: 2 / 6 / 12 / 11;
-    width:100%;
-    height:auto;
-    border:solid 1px blue; 
-}
-.child3 { 
-    grid-area: 2 / 9 / 7 / 13;
-    border:solid 1px blue;
-    margin-top:4.15vw;
-    font-size: 7em;
-    }
-.child4 { 
-    grid-area: 7 / 2 / 13 / 5; 
-    border:solid 1px blue;
-    text-align:left;
-}
+
 
     /* grid*/
     .parent {
@@ -201,6 +167,7 @@
 
     .para-text {
         font-size: 2.2vw;
+        text-align: left;;
 
     }
 
