@@ -9,13 +9,9 @@
       <p class=" kid4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
       </div>
 
-<<<<<<< HEAD
- <video class="video_getraenk" controls><source src="../assets/getraenke_holen.mp4"></video>
-    
-=======
     <div class="xl_vid ">
- <video class="schletzfertig" controls><source src="../assets/getraenke_holen.mp4"></video>    </div>
->>>>>>> 75b697ef7c033604fdc0b973a4f5cdeeda4223f1
+ <video class="schletzfertig" controls><source src="../assets/getraenke_holen.mp4"></video>    
+ </div>
     <div class="parent2">
       <p class=" kid5 dialog ">«Gärn en Tee.»</p>
       <p class=" kid6">«Nor wenn du Gönnerin wersch!»</p>
@@ -143,13 +139,9 @@
       <p class="names">Michelle </p>
       <p class="names">Helena </p>
     </div>
-<<<<<<< HEAD
-  <div class="footer" href=""> Zurück zur Karte </div>
-=======
   <div class="footer" href=""> Zurück zur Karte</div>
 
   <h1><a href="../#/schloss"> KARTE </a></h1> 
->>>>>>> bf4bc7a9f2e3b9a1a8d2fb7e33dea88cf2c0e90c
 </div>
 </template>
 
