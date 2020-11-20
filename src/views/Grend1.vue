@@ -54,7 +54,11 @@
       <img class="fritschi_bild_1" src="../assets/fritschi_1.jpg" />
       <img class="fritschi_bild_2" src="../assets/fritschi_2.jpg" />
       <img class="fritschi_bild_3" src="../assets/fritschi_3.jpg" />
+        <a class="footer" href="">zurück zur Karte</a>
+
     </div>
+
+    <a class="footer" href="../#/rathauskarte">Wiiter uf de Charte</a>
   </div>
 </template>
 
@@ -63,6 +67,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 @import url("reset.css");
 
+.footer {
+  height: 10%;
+  text-align: center;
+  padding-top: 8%;
+  color: #86ddb4;
+  padding-bottom: 8%;
+  font-size: 70px;
+}
 /*color*/
 .blue {
   color: #4cc9f0;
@@ -244,6 +256,10 @@ height:auto;}
 .tagwach_video {
   width: 300%;
   height: 300%;
+}
+
+.footer{
+    color: #86ddb4;
 }
 </style>
 

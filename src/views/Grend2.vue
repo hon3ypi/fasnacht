@@ -46,7 +46,7 @@
     </section>  
     </section>
 
-    <a class="footer" href="../#/jesuitenkarte"> Zurück zur Karte</a>
+    <a class="footer" href="../#/jesuitenkarte">Wiiter uf de Chart</a>
    </div>
 </template>
 
@@ -58,6 +58,7 @@
   padding-top: 8%;
   color: #86ddb4;
   padding-bottom: 8%;
+  font-size: 70px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap") ;

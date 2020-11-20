@@ -143,9 +143,8 @@
       <p class="names">Helena</p>
     </div>
 
-  <a class="footer" href="../#/schloss"> Zurück zur Karte</a>
-
-</div>
+    <p/><a class="footer" href="../#/karte">Zrogg uf d Charte</a>
+  </div>
 </template>
 
 -->DAS ESCH FÖR S CSS
@@ -409,6 +408,7 @@ p {
   padding-top: 8%;
   color: #86ddb4;
   padding-bottom: 8%;
+  font-size: 70px;
 }
 .besoffen_1 {
   width: 100%;
