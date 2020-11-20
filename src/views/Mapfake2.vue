@@ -342,6 +342,8 @@ export default {
 -->CSS
 <style>
 @import url("https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+ @import url("reset.css");
 .map {
   float: left;
   height: 50%;
