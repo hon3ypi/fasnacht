@@ -200,7 +200,8 @@
 
     .child12 {
         grid-area: 20 / 3 / 45 / 11;
-        font-size: 8.5em;
+        font-size: 15.5vw;
+        text-transform: capitalize;
     }
 
     img {

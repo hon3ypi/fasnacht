@@ -226,7 +226,7 @@ export default {
                 properties: {
                   title: coordinates[2].fields.ortsname,
                   description:
-                    'besch du scho mol ade tagwach gsi oder bede rathuusstäge gsi?<a href="../#/grend3"></a>',
+                    'besch du scho mol ade tagwach oder bede rathuusstäge gsi?<a href="../#/grend3"></a>',
                 },
               },
             ],
