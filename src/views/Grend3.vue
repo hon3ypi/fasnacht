@@ -138,11 +138,8 @@
       <p class="names">Michelle </p>
       <p class="names">Helena </p>
     </div>
-  <div class="footer" href=""> Zurück zur Karte </div>
 
-  <div class="footer" href=""> Zurück zur Karte</div>
-
-  <h1><a href="../#/schloss"> KARTE </a></h1> 
+  <a class="footer" href="../#/karte"> Zurück zur Karte</a>
 </div>
 </template>
 
