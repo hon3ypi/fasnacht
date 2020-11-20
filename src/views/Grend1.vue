@@ -4,9 +4,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
+      rel="stylesheet"/>
     <section class="fritschi parent">
       <p class="child1">
         <span class="blue">DU</span> hast
@@ -33,14 +31,16 @@
     <section class="tagwach parent2">
       <h4 class="yellow child5">tagwach</h4>
       <h6 class="child7">Kapellplatz, SchmuDO 5:00 Uhr</h6>
-      <div class="yellowbg child6"></div>
+      <div class="yellowbg child6">
 
-      <video class="tagwach_bruele">
-        <source src="../assets/Bruele.mp4" />
-      </video>
+      
 
       <video class="tagwach_urknall" controls>
         <source src="../assets/Urknall_Foetzelirege.mp4" />
+      </video>
+      </div>
+      <video class="tagwach_bruele">
+        <source class="bruele_cont" src="../assets/Bruele.mp4" controls >
       </video>
 
       <p class="child12">
@@ -151,24 +151,20 @@ p {
   grid-area: 2 / 6 / 12 / 11;
   width: 100%;
   height: auto;
-  border: solid 1px blue;
 }
 
 .child3 {
   grid-area: 2 / 9 / 7 / 13;
-  border: solid 1px blue;
   margin-top: 4.15vw;
   font-size: 7em;
 }
 
 .child4 {
   grid-area: 7 / 2 / 13 / 5;
-  border: solid 1px blue;
 }
 
 .parent2 {
   display: grid;
-  border: 1px solid red;
   width: 100vw;
   height: auto;
   grid-template-columns: repeat(12, 8.33vw);
@@ -182,7 +178,6 @@ p {
   position: absolute;
   width: 20%;
   height: auto;
-  border: solid 1px blue;
   margin-left: 17%;
   margin-top: 5%;
 }
@@ -190,7 +185,6 @@ p {
   position: absolute;
   width: 20%;
   height: auto;
-  border: solid 1px blue;
   margin-left: 37%;
   margin-top: 30%;
 }
@@ -198,7 +192,6 @@ p {
   position: absolute;
   width: 20%;
   height: auto;
-  border: solid 1px blue;
   margin-left: 57%;
   margin-top: 5%;
 }
@@ -236,11 +229,17 @@ img {
   overflow: hidden;
 }
 .tagwach_bruele {
-  width: 300%;
-  height: 300%;
-  margin-left: 10%;
-  margin-top: 10%;
+    padding-top:70vw;
+  width: 400%;
+  height: 400%;
+  
 }
+.bruele_cont{
+    width:100%;
+    height:100%;
+}
+.tagwach_urknall{width:100vw;
+height:auto;}
 .tagwach_video {
   width: 300%;
   height: 300%;

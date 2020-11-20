@@ -1,37 +1,28 @@
 <template>
-
-
-
   <div class="grend3">
+     <img class="huerenaff" src="../assets/Huerenaff.svg">
     <div class="parent1">
-
-
       <p class="kid1">Hey Huerenaff <br> Wie gohts?</p>
-
       <p class="kid2">Danke guet ond der Huerenaff?</p>
       <p class="kid3  ">Los Mou Huerenaff. Gömmer es Kafi Huerenaff
         go näh?</p>
       <p class=" kid4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
-    </div>
+      </div>
 
     <div class="xl_vid ">
  <video class="schletzfertig" controls><source src="../assets/getraenke_holen.mp4"></video>    </div>
     <div class="parent2">
       <p class=" kid5 dialog ">«Gärn en Tee.»</p>
-
       <p class=" kid6">«Nor wenn du Gönnerin wersch!»</p>
       <p class=" kid7">«Onbedengt.»</p>
       <p class=" kid8">«Super, Ond was fÖr en Tee döffs sii – met oder ohni Schuss?» </p>
       <p class=" kid9">«Met Schuss dänk, s esch d Fasnacht!» </p>
       <p class=" kidb">«Das freut mech – was för eine denn?» </p>
-
     </div>
-
 
     <div class="spacer1"></div>
 
     <div class="side-scrolling-wrapper">
-
       <div class="side-scrolling-title">
         <div class="row center-xs">
           <div class="col-xs-12 whitebg">
@@ -147,13 +138,24 @@
       <p class="names">Michelle </p>
       <p class="names">Helena </p>
     </div>
+  <div class="footer" href=""> Zurück zur Karte </div>
+
   <div class="footer" href=""> Zurück zur Karte</div>
 
+  <h1><a href="../#/schloss"> KARTE </a></h1> 
 </div>
 </template>
 
 -->DAS ESCH FÖR S CSS
 <style>
+.huerenaff {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  
+}
   @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
   @import url("reset.css");
 
@@ -230,7 +232,10 @@
 
     grid-area: 13 / 6/ 15 / 12;
   }
-
+.video_getraenk{
+  width: 100%;
+  height: 100%;
+}
   .parent2 {
     position: relative;
     display: grid;
