@@ -9,8 +9,13 @@
       <p class=" kid4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
       </div>
 
+<<<<<<< HEAD
  <video class="video_getraenk" controls><source src="../assets/getraenke_holen.mp4"></video>
     
+=======
+    <div class="xl_vid ">
+ <video class="schletzfertig" controls><source src="../assets/getraenke_holen.mp4"></video>    </div>
+>>>>>>> 75b697ef7c033604fdc0b973a4f5cdeeda4223f1
     <div class="parent2">
       <p class=" kid5 dialog ">«Gärn en Tee.»</p>
       <p class=" kid6">«Nor wenn du Gönnerin wersch!»</p>
@@ -108,7 +113,7 @@
       <p class="dialog3_002"> «jää, üse häxetee esch aber leider ned met vodka, mer hends do eifach nor met träsch.»</p>
 
       <div>
-        <video class="schletzfertig" src="/assets/Schletzfertig.mp4"></video>
+        <video class="schletzfertig" controls><source src="../assets/Schletzfertig.mp4"></video>
       </div>
     </div>
 
@@ -408,8 +413,7 @@
   .schletzfertig{width:100vw;
   height:auto;
   margin-top:8%;
-  border: 1px solid black;}
-
+}
   .footer{height:10%;
   text-align:center;
         padding-top:8%;
