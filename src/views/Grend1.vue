@@ -145,7 +145,7 @@ p {
 /* grid*/
 .parent {
   display: grid;
-  border: 1px solid red;
+  
   width: 100vw;
   height: auto;
   grid-template-columns: repeat(12, 8.33vw);
