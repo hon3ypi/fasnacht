@@ -1,10 +1,11 @@
 <template>
 <div class="grend2">   
-<h1>Grend 2</h1>
+
+<video class="grend_video" controls><source src="../assets/grend_frauen.mp4"></video>
 
  <section class="grend">
      <section class="vid-wrapper">
-            <video class="grend_vid" src="assets/Rathaustreppen.mp4"></video>
+           <!-- <video class="grend_vid" src="assets/Rathaustreppen.mp4"></video> -->
         <p class="dialog">Dä, wo do verbi gloffe esch!</p>
         <img class="" src="">
         <p class="dialog">Do nomol!</p>
@@ -27,17 +28,19 @@
             <p class="dialog">Ha grad es Déjà Vue.</p>
             <p class="dialog">Das esch jo en coole Grend!</p>
         </div>
-        <!--<div class="vid-wrapper">
-            <video src="" class="xl-vid"></video> -->
+        <div class="grid_bilder">
+            <img class="grend_1" src="../assets/grend_1.jpg">
+            <img class="grend_2" src="../assets/grend_2.jpg">
+            <img class="grend_3" src="../assets/grend_3.jpg">
+            <img class="grend_4" src="../assets/grend_4.jpg">
+            <img class="grend_5" src="../assets/grend_5.jpg">
+            <img class="grend_6" src="../assets/grend_6.jpg">
+        </div>
+      
             <h4>Guugge </h4>
             <p>Rathaustreppe</p>
-
-            <video src="" class="s-vid"></video>
-            <p class="">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans.
-            </p>
-            <video src="" class="m-vid"></video>
-            <video src="" class="m-vid"></video>
-            <video src="" class="s-vid"></video>
+            <p class="">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
+            
     </section>  
     </section>
    </div>
@@ -45,7 +48,6 @@
 
 -->DAS ESCH FÖR S CSS
 <style>
-
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap") ;
 @import url("reset.css");
@@ -82,6 +84,36 @@ text-decoration-line: line-through;
 text-align: center;
 color: black;
     }
+
+.grend_frauen {
+    width: 100%;
+    height: 100%;
+}
+.grid_bilder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.grend_1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.grend_2 {
+   grid-area: 1 / 2 / 2 / 3; 
+}
+.grend_3 {
+   grid-area: 1 / 3 / 2 / 4; 
+}
+.grend_4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.grend_4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.grend_4 {
+  grid-area: 2 / 3 / 3 / 4;  
+}
 
 </style>
 
