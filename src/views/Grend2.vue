@@ -45,10 +45,6 @@
             <video class="grend_gugge" controls><source src="../assets/Rathaustreppen.mp4"></video>
             <img class="gugge_1" src="../assets/grend_gugge_1.jpg">
             <img class="gugge_2" src="../assets/grend_gugge_2.jpg">
-             <br/>
-              <br/>
-               <br/>
-                <br/>
             <p class="treppen_text">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
             
     </section>  
@@ -156,7 +152,7 @@ color: black;
 }
 .treppen_text {
     text-align: left;
-    margin-top: -20%;
+    margin-top: 10%;
     margin-left: 10%;
     font-size: 60%;
     font-weight: 600;
