@@ -404,24 +404,28 @@ p {
   font-size: 70px;
 }
 .besoffen_1 {
-  width: 100%;
+  width: 40%;
   height: auto;
+  margin-top: 20%;
 }
 .besoffen_2 {
   width: 40%;
   height: auto;
+  margin-top: 20%;
+  margin-left: 1%;
 }
-.besoffen_2 {
-  width: 40%;
-  height: auto;
-}
+
 .besoffen_3 {
   width: 40%;
   height: auto;
+  margin-top: 1%;
+  
 }
 .besoffen_4 {
   width: 40%;
   height: auto;
+  margin-left: 1%;
+  margin-top: 1%;
 }
 </style>
 
