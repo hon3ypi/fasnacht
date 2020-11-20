@@ -48,7 +48,8 @@ export default {
         content_type: "grende",
       });
       let grende = grenderesult.items;
-      /*******************************************************/
+      /***ROUTEN************************************************************/
+      /*ROUTE FRITSCHIBRUNNEN->RATHAUSTREPPE*/
       map.addSource("fritschibrunnenrathaus", {
         type: "geojson",
         data: {
@@ -80,9 +81,7 @@ export default {
           "line-width": 8,
         },
       });
-
-      /*********************************************************** */
-
+      /*ROUTE RATHAUSTREPPE->JESUITENPLATZ*/
       map.addSource("rathausjesuiten", {
         type: "geojson",
         data: {
@@ -112,7 +111,8 @@ export default {
         },
       });
 
-      /* FRITSCHIBURNNEN ************************************************************/
+      /***STANDORTE************************************************************/
+      /*FRITSCHIBRUNNEN*/
       map.loadImage(grende[2].fields.grendmedia.fields.file.url, function (error, image) {
         if (error) throw error;
         map.addImage("fritschi", image);
@@ -156,6 +156,30 @@ export default {
             "text-anchor": "top",
           },
         });
+      });
+      
+      map.on("click", "point3", function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        console.log("en String");
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+      map.on("mouseenter", "point3", function () {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", "point3", function () {
+        map.getCanvas().style.cursor = "";
       });
       /* RATHAUSTREPPE ************************************************************/
       map.loadImage(grende[0].fields.grendmedia.fields.file.url, function (error, image) {
@@ -202,6 +226,31 @@ export default {
           },
         });
       });
+      
+      map.on("click", "point2", function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+        console.log("en String");
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(description)
+          .addTo(map);
+      });
+      map.on("mouseenter", "point2", function () {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", "point2", function () {
+        map.getCanvas().style.cursor = "";
+      });
+      
       /* JESUITENPLATZ ************************************************************/
       map.loadImage(grende[1].fields.grendmedia.fields.file.url, function (error, image) {
         if (error) throw error;
@@ -248,65 +297,6 @@ export default {
         });
       });
 
-      /***********************************************************************************/
-      map.on("click", "point3", function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.description;
-        console.log("en String");
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-          .setLngLat(coordinates)
-          .setHTML(description)
-          .addTo(map);
-      });
-
-      // Change the cursor to a pointer when the mouse is over the places layer.
-      map.on("mouseenter", "point3", function () {
-        map.getCanvas().style.cursor = "pointer";
-      });
-
-      // Change it back to a pointer when it leaves.
-      map.on("mouseleave", "point3", function () {
-        map.getCanvas().style.cursor = "";
-      });
-
-      /***********************************************************************************/
-      map.on("click", "point2", function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.description;
-        console.log("en String");
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-          .setLngLat(coordinates)
-          .setHTML(description)
-          .addTo(map);
-      });
-
-      // Change the cursor to a pointer when the mouse is over the places layer.
-      map.on("mouseenter", "point2", function () {
-        map.getCanvas().style.cursor = "pointer";
-      });
-
-      // Change it back to a pointer when it leaves.
-      map.on("mouseleave", "point2", function () {
-        map.getCanvas().style.cursor = "";
-      });
-
-      /***********************************************************************************/
       map.on("click", "point1", function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.description;
@@ -324,13 +314,9 @@ export default {
           .setHTML(description)
           .addTo(map);
       });
-
-      // Change the cursor to a pointer when the mouse is over the places layer.
       map.on("mouseenter", "point1", function () {
         map.getCanvas().style.cursor = "pointer";
       });
-
-      // Change it back to a pointer when it leaves.
       map.on("mouseleave", "point1", function () {
         map.getCanvas().style.cursor = "";
       });
