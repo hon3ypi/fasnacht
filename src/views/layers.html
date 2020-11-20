@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="description panel blue">
+        <div><h1>Layered pinning</h1>
+          <p>Use pinning to layer panels on top of each other as you scroll.</p>
+          <div class="scroll-down">Scroll down<div class="arrow"></div></div>
+        </div>
+      </div>
+      
+      
+      <section class="panel red">
+        <img src="/assets/holdrio1.png">
+      </section>
+      <section class="panel orange">
+          TWO
+      </section>
+      <section class="panel purple">
+          THREE
+      </section>
+      <section class="panel green">
+          FOUR
+      </section>
+      
+      <script>
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".panel").forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top", 
+    pin: true, 
+    pinSpacing: false 
+  });
+});
+
+
+ScrollTrigger.create({
+  snap: 1 / 4 // snap whole page to the closest section!
+});
+
+
+
+      </script>
+      
+      
+      
+</body>
+</html>

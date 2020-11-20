@@ -90,7 +90,7 @@ background-color: #ed5250;
   background-color: #4CC9F0;
 } 
 .titel { 
-  font-size: 130px; /* man kann font size nicht ändern */
+  font-size: 12vw; /* man kann font size nicht ändern */
   color: white;
   grid-area: 4/5/7/9;
   text-align: center;

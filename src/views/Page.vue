@@ -1,6 +1,9 @@
 <template>
-  <div class="jesuitenkarte">
-    <div ref="container" class="map"></div>
+  <div class="grendtest">
+    <section class="charte">
+      <div ref="container" class="map"></div>
+    </section>
+    <section class="content"></section>
   </div>
 </template>
 
@@ -111,8 +114,18 @@ export default {
         },
       });
 
+      /*****************************************************/
+      let resultfritschi = await contentfulClient.getEntries({
+        content_type: "grende",
+      });
+
+      console.log(resultfritschi.item);
+      //let fritschi = resultfritschi.items;
       /* FRITSCHIBURNNEN ************************************************************/
       map.loadImage(
+        //fritschi.fields.grendmedia.fields.file.url,
+        //"images.ctfassets.net/857folb0vp61/syTDePTB1SToGmTNhXyqI/3249e80243bdce19b4326cf8cd08ac0e/fritschimarker.png",
+        //"@/assets/fritschimarker.png",
         fritschi,
         function (error, image) {
           if (error) throw error;
@@ -136,7 +149,8 @@ export default {
                   },
                   properties: {
                     title: coordinates[3].fields.ortsname,
-                    description: 'wotsch scho weder <a href="../#/grend1">zrogg</a> ?',
+                    description:
+                      '<a href="../#/grend1">Ech verzell der öppis dröbert...</a>',
                   },
                 },
               ],
@@ -181,7 +195,8 @@ export default {
                 },
                 properties: {
                   title: coordinates[1].fields.ortsname,
-                  description: 'bede rathuusstäge lauft scho rüüdig vell, aber wotsch wörkli scho <a href="../#/grend2">zrogg</a> ?',
+                  description:
+                    '<a href="../#/grend2">Ech verzell der öppis dröbert...</a>',
                 },
               },
             ],
@@ -225,7 +240,8 @@ export default {
                 },
                 properties: {
                   title: coordinates[2].fields.ortsname,
-                  description: 'du besch ufgwärmt ond hesch loscht uf kafi oder tee? de chomm met, <a href="../#/grend3"><b>das</b></a> gedds ez au!',
+                  description:
+                    '<a href="../#/grend3">Ech verzell der öppis dröbert...</a>',
                 },
               },
             ],
@@ -333,8 +349,6 @@ export default {
       map.on("mouseleave", "point1", function () {
         map.getCanvas().style.cursor = "";
       });
-
-      
     });
   },
 };
@@ -343,23 +357,26 @@ export default {
 -->CSS
 <style>
 @import url("https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css");
+
 .map {
   float: left;
-  height: 100%;
+  height: 50%;
   width: 100%;
   position: fixed;
   left: 0;
 }
 
-a
-{
-color: #ED5250;
-text-decoration: underline;
-font-weight:bold;
+.charte {
+  float: left;
+  height: 50%;
+  width: 100%;
+  position: fixed;
+  left: 0;
 }
+
 .mapboxgl-popup {
   min-width: 200px;
-  max-width: 200px;
+  max-width: 400px;
   font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 </style>

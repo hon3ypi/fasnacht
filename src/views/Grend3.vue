@@ -3,15 +3,15 @@
     
 
   <div class="grend3">
-  <div class="dialogwrapper parent">
+  <div class="parent1">
 
 
-    <p class="dialog kid1">Hey Huerenaff <br> Wie gohts?</p>
+    <p class="kid1">Hey Huerenaff <br> Wie gohts?</p>
 
-    <p class="dialog kid2">Danke guet ond der Huerenaff?</p>
-    <p class="kid3 dialog">Los Mou Huerenaff. Gömmer es Kafi Huerenaff
+    <p class="kid2">Danke guet ond der Huerenaff?</p>
+    <p class="kid3  ">Los Mou Huerenaff. Gömmer es Kafi Huerenaff
       go näh?</p>
-    <p class="dialog kid4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
+    <p class=" kid4">Jo Huerenaff. Das esch e rüüdig güeti Idee. </p>
   </div>
 
   <div id="getraenke_holen.mp4" class="xl_vid ">
@@ -20,23 +20,23 @@
 <div class="parent2">
   <p class= " kid5 dialog ">«Gärn en Tee.»</p>
 
-    <p class="dialog kid6">«Nor wenn du Gönnerin wersch!»</p>
-    <p class="dialog kid7">«Onbedengt.»</p>
-    <p class="dialog kid8">«Super, Ond was fÖr en Tee döffs sii – met oder ohni Schuss?» </p>
-    <p class="dialog kid9">«Met Schuss dänk, s esch d Fasnacht!» </p>
-    <p class="dialog kid10">«Das freut mech – was för eine denn?» </p>
+    <p class=" kid6">«Nor wenn du Gönnerin wersch!»</p>
+    <p class=" kid7">«Onbedengt.»</p>
+    <p class=" kid8">«Super, Ond was fÖr en Tee döffs sii – met oder ohni Schuss?» </p>
+    <p class=" kid9">«Met Schuss dänk, s esch d Fasnacht!» </p>
+    <p class=" kidb">«Das freut mech – was för eine denn?» </p>
 
 </div>
 
 
-<div class="spacer"></div>
+<div class="spacer1"></div>
 
 <div class="side-scrolling-wrapper">
 
   <div class="side-scrolling-title">
     <div class="row center-xs">
           <div class="col-xs-12 whitebg">
-            <h1 class="fadeInUp">Die Getränkekarte</h1>
+            <h6 class="fadeInUp">Die Getränkekarte</h6>
           </div>
         </div>
   </div>
@@ -48,7 +48,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img class="drink" src="@/assets/text_kafi_huerenaff.svg" alt="">
+              <img class="drink" src="@/assets/affe.png" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -65,7 +65,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img class="drink" src="@/assets/text_Holdrio.svg" alt="">
+              <img class="drink" src="@/assets/holdrio.png" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -81,7 +81,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6">
-              <img class="drink" src="@/assets/text_Mönze-zwätschge.svg" alt="">
+              <img class="drink" src="@/assets/zwetschge.png" alt="">
             </div>
 
             <div class="col-xs-6">
@@ -98,7 +98,7 @@
           <div class="margin-75px"></div>
           <div class="row">
             <div class="col-xs-6 drink">
-              <img class="" src="@/assets/text_Häxetee.svg" alt="">
+              <img class="" src="@/assets/hexe.png" alt="">
             </div>
 
             
@@ -112,10 +112,9 @@
 
 </div>
 
-<div class="spacer"></div>
-<!--dialog3-->
-
-<!--
+<div class="spacer2">
+ <p class="dialog3_001"> «ech ha a mönze zwätschge dänkt! Oder doch en Häxetee. Ehm, Häxetee esch das met vodka oder?, ech möcht äbe scho vodka. »</p>
+ <p class="dialog3_002"> «jää, üse häxetee esch aber leider ned met vodka, mer hends do eifach nor met träsch.»</p>
 
     <div class="wrap-it">
       <p class="dialog">“Gärn es Tee,eins mit Schnaps, ich bin ja nicht krank.”</p>
@@ -147,7 +146,7 @@
     <video class="m-vid" src=""></video>
     <video class="m-vid" src=""></video>
 
-
+</div>
     <div class="wrapper-video">
 
       <video class="xl-vid" src=""></video>
@@ -210,15 +209,15 @@
   html {
     font-family: 'Noto Sans', sans-serif;
   }
-  .p{
-    color:black;
-    background-color:none;
-  }
+  
 
-  .parent {
+  .parent1 {
 
     display: grid;
     border: 1px solid red;
+    font-size:4.4vw;
+    text-align: left;
+    text-transform:uppercase;
     width: 100vw;
     height: auto;
     grid-template-columns: repeat(12, 8.33vw);
@@ -229,31 +228,32 @@
   
 .drink{margin:10px;};
 
-  .dialog {
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 4.4em;
-    height: auto;
 
-  }
 
   .kid1 {
+     text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4.4vw;
     grid-area: 2 / 2 / 4 / 9;
-    border: solid 1px red;
+    text-align: left;;
+    
+
   }
 
   .kid2 {
     text-align: right;
-
+font-weight:800;
     grid-area: 5 / 6/ 6/ 12;
   }
 
   .kid3 {
     grid-area: 8 / 2 / 10 / 9;
+    font-weight:800;
   }
 
   .kid4 {
     text-align: right;
+    font-weight:800;
 
     grid-area: 13 / 6/ 15 / 12;
   }
@@ -264,6 +264,9 @@ position:relative;
     border: 1px solid red;
     width: 100vw;
     height: auto;
+    font-size:4.4vw;
+    text-align: left;
+    text-transform:uppercase;
     grid-template-columns: repeat(12, 8.33vw);
     grid-template-rows: repeat(12, 8.33vw);
     grid-column-gap: 0px;
@@ -273,30 +276,40 @@ position:relative;
   .kid5 {
     grid-area: 2 / 2 / 4 / 9;
     border: solid 1px red;
+    font-weight:800;
+
   }
 
   .kid6 {
     text-align: right;
+    font-weight:800;
 
     grid-area: 5 / 6/ 6/ 12;
   }
 
   .kid7 {
     grid-area: 8 / 2 / 10 / 9;
+        font-weight:800;
+
   }
 
   .kid8 {
     text-align: right;
     grid-area: 10 / 6/ 15 / 12;
+            font-weight:800;
+
   }
 
 
  .kid9 {
     grid-area: 16 / 2 / 20 / 9;
+            font-weight:800;
+
   }
 
-  .kid10 {
+  .kidb {
     text-align: right;
+        font-weight:800;
 
     grid-area: 20 / 5/ 24 / 12;
   }
@@ -365,19 +378,50 @@ position:relative;
   }
   
 
-
-
-.spacer {
+.spacer1 {
   margin-top:100px;
   position: relative;
   display: block;
   background: #F8BD4F;
   height: 50vh;
 }
+
+.spacer2 {
+  margin-top:100px;
+  position: relative;
+  display: block;
+  background: #F8BD4F;
+  height: 200vh;
+}
 .fadeInUp{
   background-color: white;
+  color:black;
+  font-size:2.2vw;
+  padding-top:8%;
+  text-align:center;
+  font-weight:800;
   
 }
+
+
+.dialog3_001{font-size:4.4vw;
+    text-align: left;
+    text-transform:uppercase;
+    font-weight:800;
+    padding-left:8.33vw;
+    padding-top:8%;
+    padding-right:12%;
+}
+
+.dialog3_002{font-size:4.4vw;
+    text-align: right;
+    text-transform:uppercase;
+    font-weight:800;
+    padding-right:8.33vw;
+    padding-top:8%;
+    padding-left: 12%;
+}
+
 
 </style>
  
