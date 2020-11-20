@@ -77,7 +77,7 @@ export default {
           "line-cap": "round",
         },
         paint: {
-          "line-color": "grey",
+          "line-color": "#ED5250",
           "line-width": 8,
         },
       });
