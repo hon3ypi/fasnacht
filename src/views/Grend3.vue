@@ -10,7 +10,8 @@
       </div>
 
     <div class="xl_vid ">
- <video class="schletzfertig" controls><source src="../assets/getraenke_holen.mp4"></video>    </div>
+ <video class="schletzfertig" controls><source src="../assets/getraenke_holen.mp4"></video>    
+ </div>
     <div class="parent2">
       <p class=" kid5 dialog ">«Gärn en Tee.»</p>
       <p class=" kid6">«Nor wenn du Gönnerin wersch!»</p>
