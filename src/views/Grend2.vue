@@ -2,39 +2,21 @@
 
 <div class="parent1">
     <img class="kid1" src="../assets/Grend.svg">
-
       <p class="kid2">Der Grend do</p>
       <p class="kid3">Dä, wo do verbi gloffe esch!</p>
-
-    </div>
-
-  
 
 <div class="grend2">   
 
 <video class="grend_video" controls><source src="../assets/grend_frauen.mp4"></video>
-
-
-
-
-
-
  <section class="grend">
-
-
-
-
-     <section class="vid-wrapper">
-       
+     <section class="vid-wrapper">     
         <img class="" src="">
         <p class="dialog001">Do nomol ene!</p>
-         <br/>
-        
+         <br/>       
     <span class="dialog002"> <span class="">Das esch jo en cooli </span>
         <span class="txtthrough"> Larva!</span></span>
     <span class="esch"> esch</span>
     <span class="tabu"> Tabu!</span>
-
         <div class="nono-words">
             <p class="nono1">Waggis!</p>
             <p class="nono2">Cortège!!</p>
@@ -71,6 +53,7 @@
 
 
    </div>
+    </div>
 </template>
 
 -->DAS ESCH FÖR S CSS
@@ -114,7 +97,6 @@ font-size: 60px;
 text-align: center;
 color: black;
 text-transform: uppercase;
-text-decoration: ;
     }
 .nono-words {
 font-size: 100px;
