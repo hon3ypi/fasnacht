@@ -1,38 +1,34 @@
 <template>
 
-<div class="parent1">
-    <img class="kid1" src="../assets/Grend.svg">
+<div class="parent_text1">
+    <img class="kid_grendFoto" src="../assets/Grend.svg">
       <p class="kid2">Der Grend do</p>
       <p class="kid3">Dä, wo do verbi gloffe esch!</p>
-
-<div class="grend2">   
-
-<video class="grend_video" controls><source src="../assets/grend_frauen.mp4"></video>
- <section class="grend">
-     <section class="vid-wrapper">     
-        <img class="" src="">
-        <p class="dialog001">Do nomol ene!</p>
-         <br/>       
-    <span class="dialog002"> <span class="">Das esch jo en cooli </span>
+      <div class="grend2"> 
+        <div class="colorbg">
+            <p class="dialog001">Do nomol ene!</p>  
+            <video class="grend_video" controls><source src="../assets/grend_frauen.mp4"></video>
+        </div>
+    <section class="grend">
+            <span class="dialog002"> <span class="dialog_002"> Das esch jo en cooli</span>
         <span class="txtthrough"> Larva!</span></span>
-    <span class="esch"> esch</span>
-    <span class="tabu"> Tabu!</span>
+        <span class="esch"> esch vo Basel!eww</span>
+        <span class="tabu"> Tabu!</span>
         <div class="nono-words">
             <p class="nono1">Waggis!</p>
             <p class="nono2">Cortège!!</p>
             <p class="nono3">Schnitzelbängg!</p>
             <p class="nono4">Morgenschtraich!!</p>
         </div>
-        <div class="grid_bilder">
-            <img class="grend_1" src="../assets/grend_1.jpg">
-            <img class="grend_2" src="../assets/grend_2.jpg">
-            <img class="grend_3" src="../assets/grend_3.jpg">
-            <img class="grend_4" src="../assets/grend_4.jpg">
-            <img class="grend_5" src="../assets/grend_5.jpg">
-            <img class="grend_6" src="../assets/grend_6.jpg">
-        </div>
+    <div class="grid_bilder">
+        <img class="grend_1" src="../assets/grend_1.jpg">
+        <img class="grend_2" src="../assets/grend_2.jpg">
+        <img class="grend_3" src="../assets/grend_3.jpg">
+        <img class="grend_4" src="../assets/grend_4.jpg">
+        <img class="grend_5" src="../assets/grend_5.jpg">
+        <img class="grend_6" src="../assets/grend_6.jpg">
+    </div>
         <div class="layer">
-            <img class="" src="">
             <p class="dialog003">Dä, wo do verbi gloffe esch!</p>
             <p class="dialog004">Ha grad es Déjà Vue.</p>
              <br/>
@@ -45,13 +41,9 @@
             <img class="gugge_1" src="../assets/grend_gugge_1.jpg">
             <img class="gugge_2" src="../assets/grend_gugge_2.jpg">
             <p class="treppen_text">Die Treppe ist stark belebt und regelmässig finden Aufführungen statt. Highlight für Guggenfans. </p>
-            
-    </section>  
      <br/>
         <a class="footer" href="../#/jesuitenkarte">WIITER UF DE CHARTE</a>
     </section>
-
-
    </div>
     </div>
 </template>
@@ -91,26 +83,50 @@
     /*grid-column-gap: 0px;
     grid-row-gap: 0px;
     } */
-
+.grend2 {
+margin-top: 75vw;
+margin-left: -10vw;
+}
+.grend_video {
+    width: 35%;
+    height: auto;
+    margin-top: -30vw;
+    margin-left: 55vw;
+}
+.colorbg {
+  background-color: #86ddb4;
+  width: 105vw;
+  height: 30vw;
+}
+.dialog001 {
+    padding-left:8%;
+    padding-right:90%;
+    padding-top: 50px;
+    font-size:6vw;
+    font-weight:800;
+    text-align:left;
+    color: white;
+}
 .grend {
 font-size: 60px;
 text-align: center;
 color: black;
 text-transform: uppercase;
-    }
+}
 .nono-words {
-font-size: 100px;
+font-size: 50px;
+color: #ED5250;
 padding-left:8vw;
 padding-bottom:3vw;
 text-decoration-line: line-through;
 text-align: center;
-color: black;
-    }
+ }
+.txtthrough  {  
+text-decoration: line-through;
+color: #ED5250;
+ }
 
- .txtthrough   {  text-decoration: line-through;}
-
-
-.parent1 {
+.parent_text1 {
   display: grid;
   font-size: 4.4vw;
   text-align: left;
@@ -121,8 +137,7 @@ color: black;
   grid-template-rows: repeat(12, 8.33vw);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-}
-
+} /*
 .kid1 {
   grid-area: 1 / 6 / 5 / 12;
   text-transform: uppercase;
@@ -130,63 +145,79 @@ color: black;
   font-size: 4.4vw;
   text-align: left;
 }
-
 .kid2 {
   text-align: left;
   font-weight: 800;
   font-size:4.4vw;
   grid-area: 2 / 2 / 4 / 3;
 }
-
 .kid3 {
   grid-area: 6 /2 / 8 / 9;
   font-weight: 800;
     font-size:4.4vw;
-
+} */
+.kid_grendFoto {
+height: auto;
+width: 500%;
+margin-left: 25vw;
 }
+.kid2 {
+font-weight: 800;
+font-size:6vw;
+padding-left:30%;
+padding-right:20%;
+}
+.kid3 {
+font-weight: 800;
+font-size:4.4vw;
+padding-left: 0vw;
+padding-right:20%;
+padding-top: 2vw;
+}
+
 .esch{
     padding-right:8vw;
-    padding-left:69vw;
+    padding-left:2vw;
 }
 .tabu{
     font-size:17.6vw;
     text-align:right;
-    padding-right:8vw
+    padding-right:8vw;
+    padding-left: 10vw;
 }
 
-
-.dialog001 , .dialog003{padding-left:8%;
+.dialog003 {
+    padding-left:8%;
     padding-right:8%;
     padding-top:8%;
     font-size:4.4vw;
-        font-weight:800;
-
+    font-weight:800;
     text-align:left;
-
 }
-.dialog002, .dialog004{padding-left:8%;
+
+.dialog002, .dialog004, .layer  {
+    padding-left:45%;
+    padding-right:0%;
+    padding-top:8%;
+    font-size:4.4vw;
+    font-weight:800;
+}
+.txtthrough {
+    color: #ED5250;
+    padding-left:45%;
+}
+.dialog005 {
+    padding-left:8%;
     padding-right:8%;
     padding-top:8%;
     font-size:4.4vw;
     font-weight:800;
     text-align:right;
-
 }
-
-.dialog005{padding-left:8%;
-    padding-right:8%;
-    padding-top:8%;
-    font-size:4.4vw;
-        font-weight:800;
-
-    text-align:right;
-
-}
-
-
 .grend_frauen {
     width: 100%;
     height: 100%;
+    margin-top: 0vw;
 }
 
 /* grid 2*/
@@ -216,8 +247,9 @@ color: black;
   grid-area: 2 / 3 / 3 / 4;  
 }
 .grend_gugge {
-    width: 100%;
-    height: 100%;
+    width: 300%;
+    height:auto;
+
 }
 .gugge_1 {
     width: 25%;

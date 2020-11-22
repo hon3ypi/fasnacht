@@ -89,7 +89,7 @@ html {
   background-color: #4cc9f0;
 }
 .titel {
-  font-size: 12vw; /* man kann font size nicht ändern */
+  font-size: 8vw; 
   color: white;
   grid-area: 4/5/7/9;
   text-align: center;
