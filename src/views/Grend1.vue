@@ -28,20 +28,20 @@
       </span>
     </section>
 
-    <section class="tagwach parent2">
-      <h4 class="yellow child5">tagwach</h4>
-      <h6 class="child7">Kapellplatz, SchmuDO 5:00 Uhr</h6>
+  <h4 class="yellow textTagwach">tagwach</h4>
+
+  <section class="tagwach parent2">
       <div class="yellowbg child6">
-
-      
-
-      <video class="tagwach_urknall" controls>
-        <source src="../assets/Urknall_Foetzelirege.mp4" />
-      </video>
+        <h6 class="datumSchmudo">Kapellplatz, SchmuDO 5:00 Uhr</h6>
+        <div class="bluebg">
+          <video class="tagwach_urknall" controls>
+          <source src="../assets/Urknall_Foetzelirege.mp4" />
+        </video>
+        </div>
+        
       </div>
       <video class="tagwach_bruele">
-        <source class="bruele_cont" src="../assets/Bruele.mp4" controls >
-      </video>
+        <source src="../assets/Bruele.mp4" controls ></video>
 
       <p class="child12">
         1-0-0- t-a-u-s-e-n-d-e- P-a-p-i-e-r- s-c-h-n-i-t-z-e-l
@@ -51,15 +51,13 @@
     </section>
     
     <a class="footer" href="../#/rathauskarte">WIITER UF DE CHARTE</a>
+
     <!--------------------- 3 Bilder am schluss --------------------->
     <div class="fritschi_bilder">
       <img class="fritschi_bild_1" src="../assets/fritschi_1.jpg" />
       <img class="fritschi_bild_2" src="../assets/fritschi_2.jpg" />
       <img class="fritschi_bild_3" src="../assets/fritschi_3.jpg" />
     </div>
-
-    
-
    
   </div>
 </template>
@@ -80,6 +78,7 @@
 /*color*/
 .blue {
   color: #4cc9f0;
+  font-weight: bold;
 }
 
 .yellow {
@@ -115,7 +114,7 @@ h4 {
   font-size: 4em;
   text-transform: uppercase;
   line-height: 110%;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 0;
 }
 
@@ -145,7 +144,6 @@ p {
 /* grid*/
 .parent {
   display: grid;
-  
   width: 100vw;
   height: auto;
   grid-template-columns: repeat(12, 8.33vw);
@@ -161,8 +159,8 @@ p {
   margin-top: 0;
   align-self: flex-end;
   font-size: 50px;
+  font-weight: bold;
 }
-
 .child2 {
   grid-area: 2 / 6 / 12 / 11;
   width: 100%;
@@ -176,8 +174,10 @@ p {
 }
 
 .child4 {
-  grid-area: 7 / 2 / 13 / 5;
+  grid-area: 7 / 2 / 4 / 6;   /*  VORHERgrid-area: 7 / 2 / 13 / 5;*/
   font-size: 20px;
+  margin-bottom: 50px;
+  margin-top: 470px;
 }
 
 .parent2 {
@@ -217,13 +217,6 @@ img {
   overflow: hidden;
 }
 
-.child7 {
-  grid-area: 5 / 2 / 8 / 6;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
 .child8 {
   background-color: red;
   grid-area: 13 / 3 / 18 / 8;
@@ -245,27 +238,49 @@ img {
 img {
   overflow: hidden;
 }
+.tagwach {
+  margin-top: 16.5vw;
+}
+.textTagwach {
+  margin-bottom: -220px;
+  align-self: flex-end;
+  font-size: 70px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.datumSchmudo {
+ /* VORHER grid-area: 5 / 2 / 8 / 6;*/
+  color: white;
+  margin-top: 10px;
+  margin-left: 150px;
+  font-size: 25px;
+  font-weight: bold;
+}
 .tagwach_bruele {
-    padding-top:70vw;
-  width: 400%;
-  height: 400%;
-  
+  width:90vw;
+  height:auto;
+  margin-top: 45px;
+  margin-left: -50px;  
 }
-.bruele_cont{
-    width:100%;
-    height:100%;
+.tagwach_urknall{
+  /*padding-top:60vw;*/
+  width: 90%;
+  height: auto; 
+  margin-top: 2.5vw;
+  margin-left: 40px;
 }
-.tagwach_urknall{width:100vw;
-height:auto;}
-.tagwach_video {
-  width: 300%;
-  height: 300%;
+.bluebg {
+  background-color: #4cc9f0;
+  width: 70vw;
+  height: 40vw;
+  margin-top: 55vw;
+  margin-left: 10vw;
 }
-
 .footer{
     color: #86ddb4;
     font-size:1vw;
 }
+
 </style>
 
 -->DAS ESCH FÖR S JAVASCRIPT
